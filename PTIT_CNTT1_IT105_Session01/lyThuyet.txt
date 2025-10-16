@@ -1,1 +1,217 @@
-Test
+Lesson 1: Tổng quan về Hệ thống Thông tin 
+   1. Giới thiệu:
+        Hệ thống thông tin (IS) là nền tảng của thời đại số, kết nối con người – dữ liệu – quy trình để hỗ trợ quản lý,
+        ra quyết định và tạo giá trị. Mọi hoạt động hiện nay (mua hàng online, học trực tuyến, sản xuất…) đều dựa trên IS.
+    2. Khái niệm:
+        Hệ thống thông tin là tập hợp có tổ chức của con người, phần cứng, phần mềm, dữ liệu và quy trình, dùng để thu thập, xử lý,
+        lưu trữ và phân phối thông tin nhằm phục vụ hoạt động và quyết định của tổ chức.
+    ➡️ Không chỉ là phần mềm, mà là sự kết hợp giữa công nghệ và yếu tố con người.
+
+    3. Các thành phần chính của Hệ thống Thông tin:
+        •	Phần cứng (Hardware): Bao gồm các thiết bị vật lý như máy chủ, máy tính, thiết bị mạng, cảm biến… giúp hệ thống vận hành.
+        •	Phần mềm (Software): Là tập hợp các chương trình và ứng dụng điều khiển phần cứng và xử lý dữ liệu, ví dụ như các hệ thống ERP hay LMS.
+        •	Dữ liệu (Data): Là tài nguyên quan trọng nhất của hệ thống, gồm các thông tin số, văn bản, hình ảnh, âm thanh được lưu trữ và phân tích để ra quyết định.
+        •	Con người (People): Gồm người dùng, nhà quản trị, lập trình viên, phân tích viên – những người trực tiếp tương tác và vận hành hệ thống.
+        •	Quy trình (Process): Là chuỗi bước logic mô tả cách dữ liệu được thu thập, xử lý, truyền đạt và lưu trữ.
+    Một hệ thống hiệu quả phải có sự phối hợp đồng bộ giữa cả 5 yếu tố này.
+
+    4. Vai trò của Hệ thống Thông tin:
+        1.	Hỗ trợ hoạt động tác nghiệp: Tự động hóa công việc lặp lại, giảm sai sót và tăng năng suất.
+        2.	Hỗ trợ ra quyết định: Phân tích dữ liệu giúp nhà quản lý lựa chọn chính xác hơn.
+        3.	Tạo lợi thế cạnh tranh: Tăng tốc độ và chất lượng ra quyết định, nâng cao trải nghiệm khách hàng.
+        4.	Hỗ trợ giao tiếp và hợp tác: Kết nối nhân viên, nhóm, và bộ phận trong tổ chức.
+        5.	Đảm bảo kiểm soát và bảo mật thông tin: Bảo vệ dữ liệu và quản lý truy cập an toàn.
+
+Lesson 2: Phân loại Hệ thống Thông tin
+
+    1. Khái niệm & phân loại:
+        Hệ thống thông tin được chia theo cấp quản lý:
+            Hệ thống xử lý giao dịch – TPS (Transaction Processing System)
+            Hệ thống thông tin quản lý – MIS (Management Information System)
+            Hệ thống hỗ trợ ra quyết định – DSS (Decision Support System)
+            Hệ thống thông tin điều hành – ESS (Executive Support System)
+            Hệ thống chuyên gia – ES (Expert System)
+        Ngoài ra còn có ERP, CRM, SCM, LMS, E-Gov.
+
+    2.1. TPS – Transaction Processing System
+        Xử lý giao dịch hàng ngày, lặp lại, có cấu trúc.
+        Ví dụ: POS, ATM, điểm danh.
+        → Nền tảng dữ liệu cho các hệ thống cao hơn.
+
+    2.2. MIS – Management Information System
+        Tổng hợp dữ liệu từ TPS, tạo báo cáo định kỳ.
+        Hỗ trợ quản lý cấp trung giám sát & lập kế hoạch.
+        Ví dụ: báo cáo doanh số, tỷ lệ tốt nghiệp.
+
+    2.3. DSS – Decision Support System
+        Phân tích dữ liệu, mô phỏng tình huống “what-if”.
+        Kết hợp dữ liệu nội bộ và bên ngoài.
+        Ví dụ: dự báo doanh số, xác định chỉ tiêu.
+
+    2.4. ESS – Executive Support System
+        Hỗ trợ lãnh đạo cấp cao ra quyết định chiến lược.
+        Hiển thị dữ liệu qua dashboard, biểu đồ tổng quan.
+        Ví dụ: theo dõi doanh thu, thị phần, tuyển sinh.
+
+    2.5. ES – Expert System
+        Mô phỏng kiến thức chuyên gia, ra quyết định tự động.
+        Dựa trên cơ sở tri thức và luật suy luận.
+        Ví dụ: chẩn đoán bệnh, chấm điểm tín dụng.
+
+    3. Mối quan hệ giữa các hệ thống:
+        TPS ghi nhận dữ liệu bán hàng từng đơn lẻ.
+        MIS tổng hợp doanh thu theo tháng.
+        DSS dự báo doanh thu quý tới.
+        ESS hiển thị biểu đồ tăng trưởng cho ban giám đốc.
+        Càng lên cao, dữ liệu tổng hợp và trừu tượng hơn.
+
+    4. Hệ thống mở rộng:
+        •	ERP: Quản lý tổng thể doanh nghiệp.
+        •	CRM: Quản lý khách hàng & bán hàng.
+        •	SCM: Quản lý chuỗi cung ứng.
+        •	LMS: Quản lý học tập & đào tạo.
+        •	E-Gov: Cung cấp dịch vụ công trực tuyến.
+
+Lesson 3: Quy trình Phát triển Phần mềm
+    1. Khái niệm:
+        SDLC (Software Development Life Cycle) là quy trình phát triển phần mềm có tổ chức, gồm nhiều giai đoạn từ ý tưởng đến bảo trì.
+        → Giúp đảm bảo chất lượng, tiến độ và chi phí hợp lý.
+
+    2. Các giai đoạn chính:
+        Giai đoạn 1 – Phân tích yêu cầu:
+            Khảo sát người dùng, xác định yêu cầu chức năng và phi chức năng.
+            Tạo tài liệu SRS làm cơ sở cho thiết kế.
+
+        Giai đoạn 2 – Thiết kế hệ thống:
+            Chuyển yêu cầu thành bản thiết kế kỹ thuật.
+            Thiết kế kiến trúc, CSDL, giao diện và sơ đồ UML.
+
+        Giai đoạn 3 – Lập trình (Implementation):
+            Viết mã nguồn theo thiết kế.
+            Phân chia module, kiểm thử đơn vị, tích hợp hệ thống.
+
+        Giai đoạn 4 – Kiểm thử (Testing):
+            Đảm bảo hệ thống chạy đúng yêu cầu, không lỗi.
+            Các loại test: Unit, Integration, System, UAT.
+
+        Giai đoạn 5 – Triển khai (Deployment):
+            Đưa phần mềm lên môi trường thật, cấu hình, đào tạo người dùng.
+            Thu thập phản hồi và theo dõi hoạt động.
+
+        Giai đoạn 6 – Bảo trì (Maintenance):
+            Sửa lỗi, cập nhật, nâng cấp tính năng, tối ưu hiệu năng.
+
+    3. Mối quan hệ giữa các giai đoạn:
+        Các bước liên kết chặt chẽ, đầu ra của giai đoạn này là đầu vào của giai đoạn sau.
+        Trong mô hình Agile, có thể quay lại chỉnh sửa khi phát hiện lỗi.
+
+    4. Tầm quan trọng của SDLC:
+        •	Đảm bảo chất lượng và giảm rủi ro.
+        •	Tiết kiệm chi phí và thời gian phát triển.
+        •	Dễ quản lý tiến độ, trách nhiệm, và minh bạch quy trình.
+        •	Tăng hiệu quả phối hợp giữa khách hàng – dev – tester – quản lý.
+
+Lesson 4: So sánh các mô hình phát triển phần mềm
+    1. Tiêu chí so sánh chính:
+        Ổn định yêu cầu, rủi ro, chi phí thay đổi, tài liệu, nhịp bàn giao,
+        mức tham gia khách hàng, kiểm thử, dự báo, tuân thủ, mở rộng.
+
+    2. Waterfall:
+        Phát triển tuần tự từng pha SDLC.
+        Phù hợp yêu cầu ổn định, dự án công/chính phủ.
+        Ưu: dễ quản lý, tài liệu rõ.
+        Nhược: phản hồi muộn, đổi yêu cầu tốn kém.
+
+    3. V-Model:
+        Mở rộng Waterfall, gắn mỗi pha với một pha test tương ứng.
+        Dùng trong lĩnh vực an toàn, y tế, ô tô.
+        Ưu: kiểm soát chất lượng, dễ audit.
+        Nhược: cứng nhắc, tốn tài liệu.
+
+    4. Iterative:
+        Xây dựng bản thô, lặp lại để cải tiến.
+        Ưu: phản hồi sớm, giảm hiểu sai.
+        Nhược: dễ trượt phạm vi.
+        Dùng khi yêu cầu chưa rõ.
+
+    5. Incremental:
+        Phát triển phần mềm theo từng phần có giá trị sử dụng.
+        Ưu: ra giá trị sớm, quản lý tốt.
+        Nhược: cần kiến trúc tổng thể sớm.
+
+    6. Spiral:
+        Chu kỳ gồm xác định mục tiêu → phân tích rủi ro → phát triển → kế hoạch mới.
+        Ưu: mạnh về quản trị rủi ro.
+        Nhược: phức tạp, tốn quản lý.
+        Dùng cho dự án lớn, rủi ro cao.
+
+    7. Agile – triết lý linh hoạt:
+        Tập trung phản hồi nhanh, phần mềm chạy được, thích ứng thay đổi.
+
+        Scrum:
+        Làm việc theo Sprint 1–4 tuần.
+        Ưu: giao hàng đều, minh bạch, phản hồi sớm.
+        Nhược: cần PO mạnh, kỷ luật nhóm cao.
+
+        Kanban:
+        Trực quan hoá luồng công việc, giới hạn WIP.
+        Ưu: linh hoạt, phù hợp bảo trì.
+        Nhược: dễ quá tải nếu không kiểm soát.
+
+
+    8. So sánh tổng quát:
+        Waterfall & V-Model → ổn định, tài liệu nhiều, ít linh hoạt.
+        Agile (Scrum/Kanban) → linh hoạt, phản hồi nhanh, đổi dễ.
+        Spiral → rủi ro cao, dự án lớn.
+        Iterative/Incremental → phát hành sớm, cải tiến dần.
+
+    9. Cách chọn mô hình:
+        •	Yêu cầu ổn định → Waterfall / V-Model
+        •	Rủi ro cao → Spiral / Iterative
+        •	Cần ra giá trị nhanh → Agile (Scrum/Kanban)
+        •	Muốn chia nhỏ phát hành → Incremental
+        •	Cần phản hồi người dùng → Prototyping / RAD
+        •	Kết hợp CI/CD + DevOps để tối ưu triển khai.
+        
+Lesson 5: Tổng quan về UML và vai trò của quá trình mô hình hoá
+    1. Giới thiệu UML:
+        UML (Unified Modeling Language) là ngôn ngữ mô hình hoá chuẩn để biểu diễn, phân tích, thiết kế và tài liệu hoá hệ thống phần mềm.
+        👉 UML không quy định quy trình, mà cung cấp ký pháp trực quan để mô tả cấu trúc và hành vi hệ thống.
+
+    Lợi ích của mô hình hoá:
+        •	Giao tiếp chung giữa BA, dev, tester, khách hàng.
+        •	Giảm hiểu sai yêu cầu, phát hiện xung đột sớm.
+        •	Hỗ trợ quyết định kiến trúc và thiết kế module.
+        •	Dễ bảo trì, onboarding, và truy vết yêu cầu → kiểm thử.
+
+    2. Khung tổng quan UML:
+        UML chia thành 2 nhóm chính + 1 nhánh tương tác:
+
+        Nhóm cấu trúc (Structural Diagrams):
+            •	Class Diagram: lớp, thuộc tính, quan hệ.
+            •	Object Diagram: ảnh chụp trạng thái đối tượng.
+            •	Component Diagram: module, service và phụ thuộc.
+            •	Deployment Diagram: triển khai phần mềm lên server/container.
+            •	Package Diagram: nhóm gói, phụ thuộc giữa gói.
+            •	Composite Structure Diagram: cấu trúc nội tại của lớp/thành phần.
+
+    Nhóm hành vi (Behavioral Diagrams):
+        •	Use Case Diagram: mô tả actor ↔ hệ thống.
+        •	Activity Diagram: luồng công việc, nhánh, song song.
+        •	State Machine Diagram: trạng thái và chuyển đổi trạng thái.
+
+    Nhánh tương tác (Interaction Diagrams):
+        •	Sequence Diagram: thứ tự thông điệp giữa các đối tượng.
+        •	Communication Diagram: cấu trúc liên kết & message.
+        •	Timing Diagram: biểu đồ thời gian, tín hiệu.
+        •	Interaction Overview: tổng quan tương tác.
+
+    ⸻
+
+    3. Chọn sơ đồ theo giai đoạn SDLC:
+        •	Khảo sát yêu cầu: Use Case, Activity → hiểu nghiệp vụ.
+        •	Phân tích: Class, State, Sequence → mô hình hóa domain.
+        •	Thiết kế: Component, Package, Class, Sequence → cấu trúc & API.
+        •	Kiểm thử: Dò Use Case ↔ Test Case, Activity → đảm bảo độ phủ.
+        •	Triển khai: Deployment, Component → mô tả hạ tầng & mạng.
+
