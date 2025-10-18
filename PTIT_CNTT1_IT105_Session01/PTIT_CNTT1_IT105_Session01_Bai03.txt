@@ -1,0 +1,36 @@
+1. Con người (People)
+Mô tả:
+Những người tham gia và tương tác với hệ thống:
+ Khách hàng: đặt món, thanh toán, theo dõi đơn hàng
+ Nhà hàng: nhận đơn, xác nhận, chuẩn bị món
+ Tài xế (shipper): nhận đơn giao hàng, cập nhật trạng thái
+ Quản trị viên: giám sát hoạt động, xử lý sự cố, cập nhật dữ liệu hệ thống
+
+2. Dữ liệu (Data)
+Mô tả:
+Tất cả thông tin được lưu trữ và xử lý trong hệ thống:
+ Thông tin người dùng, nhà hàng, món ăn, giá, khuyến mãi
+ Đơn hàng, trạng thái giao hàng, lịch sử thanh toán
+ Dữ liệu phản hồi, đánh giá và xếp hạng
+
+3. Quy trình (Process)
+Mô tả:
+Chuỗi các bước hoạt động của hệ thống:
+ Người dùng đăng nhập → chọn món → đặt hàng
+ Hệ thống gửi yêu cầu đến nhà hàng
+ Nhà hàng xác nhận → tài xế nhận đơn → giao món
+ Khách hàng thanh toán và đánh giá sau khi nhận hàng
+
+4. Phần mềm (Software)
+Mô tả:
+Các ứng dụng và hệ thống quản lý xử lý dữ liệu:
+ Ứng dụng đặt món trên điện thoại (Android/iOS)
+ Hệ thống quản lý đơn hàng cho nhà hàng và tài xế
+ Phần mềm máy chủ (server) xử lý giao dịch, thông báo, định tuyến
+
+5. Phần cứng (Hardware)
+Mô tả:
+Thiết bị vật lý hỗ trợ hệ thống vận hành:
+ Điện thoại, máy tính bảng của khách hàng, nhà hàng, tài xế
+ Máy chủ lưu trữ dữ liệu, hệ thống mạng, thiết bị GPS
+ Thiết bị thanh toán (POS, thẻ, ví điện tử)

@@ -1,0 +1,82 @@
+1. Planning (Lập kế hoạch)
+     Mục tiêu
+        Xây dựng cổng đăng ký tiêm online, xác nhận & xếp lịch tự động, theo dõi đã/ chưa tiêm, nhắc lịch và cấp chứng nhận.
+     Phạm vi
+        Cổng người dân, cổng quản trị trung tâm, API, CSDL, dịch vụ gửi SMS/Email, báo cáo.
+     Stakeholders
+        Người dân, nhân viên tiếp nhận, điều dưỡng/bác sĩ, quản trị trung tâm, phòng CNTT.
+     Chỉ số thành công
+        >80% đăng ký thực hiện online, tỉ lệ “no-show” giảm ≥20%, thời gian xếp lịch <10 giây, P95 phản hồi <2 giây.
+     Mốc & nguồn lực (ví dụ)
+        12–14 tuần; 2 BE, 2 FE, 1 Mobile/FE, 1 QA, 1 BA/PO, 1 DevOps.
+     Rủi ro & phương án
+        Tải cao giờ cao điểm → autoscale + hàng đợi; dữ liệu sai/ trùng → xác thực danh tính và ràng buộc nghiệp vụ; bảo mật → mã hóa, kiểm soát truy cập.
+
+2. Requirement Analysis (Phân tích yêu cầu)
+     Chức năng cốt lõi
+        Người dân: tạo tài khoản/SSO, khai báo thông tin, chọn mũi/loại vắc xin, chọn cơ sở & khung giờ, nhận xác nhận, đổi/ hủy lịch, xem lịch sử tiêm, tải chứng nhận.
+        Trung tâm: phê duyệt/ từ chối đăng ký, xếp lịch theo năng lực bàn tiêm, quản lý danh sách đã/ chưa tiêm theo ca, nhập kết quả tiêm & phản ứng sau tiêm, xuất báo cáo.
+     Quy tắc nghiệp vụ tiêu biểu
+        Không trùng lịch cho cùng công dân cùng khung giờ; khoảng cách giữa các mũi theo hướng dẫn; giới hạn suất theo năng lực ca; ưu tiên nhóm đối tượng.
+     Yêu cầu phi chức năng
+        Bảo mật & riêng tư (OAuth2/OIDC, RBAC, mã hóa dữ liệu nhạy cảm, audit log, tuân thủ bảo vệ dữ liệu cá nhân).
+        Hiệu năng & sẵn sàng (99.9%, P95 <2s, hàng đợi chống nghẽn, cache).
+        Khả dụng ngoại tuyến nhẹ cho khu vực sóng yếu (đệm tạm, đồng bộ lại).
+     Dữ liệu & tích hợp
+        CCCD/ID, hồ sơ sức khỏe rút gọn, vaccine, lô/ hạn, cơ sở tiêm, lịch hẹn, chứng nhận; tích hợp cổng SMS/Email, tra cứu mã định danh nếu có.
+         Đầu ra
+         SRS, user stories + acceptance criteria, use cases, mockups.
+
+3. System Design (Thiết kế hệ thống)
+     Kiến trúc đề xuất
+        Web người dân + Web quản trị; Backend API (REST/GraphQL); CSDL quan hệ (PostgreSQL/MySQL); Redis cache; hàng đợi (RabbitMQ/Kafka) cho xác nhận & thông báo; dịch vụ thông báo SMS/Email; job scheduler nhắc lịch.
+     Mô hình dữ liệu chính
+        CongDan, TaiKhoan, DangKyTiem, LichHen, CoSoTiem, BanTiem, Vaccine, LoVaccine, MuiTiem, KetQuaTiem, ChungNhan, NhatKyHeThong.
+     Thiết kế luồng nghiệp vụ
+        Đăng ký → kiểm tra điều kiện & suất → giữ chỗ tạm thời → xác nhận → sinh lịch hẹn → nhắc lịch → check-in → ghi nhận kết quả → cấp chứng nhận.
+     Thiết kế bảo mật
+        OAuth2/OIDC, MFA cho quản trị; RBAC; mã hóa at-rest & in-transit; rate limit/anti-bot; audit log; sao lưu & khôi phục.
+     Khả năng mở rộng & dự phòng
+        Triển khai container/K8s, autoscale, replicate DB, backup hằng ngày, feature flags.
+     Đầu ra
+        HLD/LLD, ERD, Class/Sequence/Activity diagrams, hợp đồng API, kế hoạch kiểm thử & triển khai.
+
+4. Implementation (Lập trình)
+     Công nghệ tham chiếu
+        FE: React/Next hoặc Angular; BE: Node.js/NestJS hoặc Java/Spring; DB: PostgreSQL; Infra: Docker/K8s, CI/CD.
+     Chuẩn mã & quy ước
+        Code review, lint, secret management, chuẩn logging & tracing (OpenTelemetry).
+     API tiêu biểu
+        POST /registrations, POST /appointments/confirm, GET /appointments/me, PATCH /appointments/{id}, POST /vaccinations/record, GET /reports/summary.
+     CI/CD
+        Build + unit test → scan bảo mật → deploy staging → E2E → canary/progressive delivery.
+     Dữ liệu khởi tạo
+        Danh mục vaccine, cơ sở tiêm, ca làm việc, nhân sự & phân quyền.
+
+5. Testing (Kiểm thử)
+     Unit & Component tests
+        Bao phủ nghiệp vụ lõi (giữ chỗ, xác nhận, ràng buộc mũi).
+     Integration & E2E
+        Luồng đăng ký đến cấp chứng nhận; kiểm tra tích hợp SMS/Email.
+     Hiệu năng & tải
+        Kịch bản giờ cao điểm (đăng ký đồng thời), đo P95/P99, thử resiliency/chaos.
+     Bảo mật
+         OWASP, kiểm thử xâm nhập, quét dependency, kiểm thử quyền truy cập & lộ dữ liệu.
+     UAT & dữ liệu thật mẫu
+        Chạy UAT với nhân viên tiếp nhận/điều dưỡng; làm sạch dữ liệu thử.
+     Kế hoạch rollback
+        Bản phát hành có kịch bản khôi phục và script đảo thay đổi CSDL.
+
+6. Deployment & Maintenance (Triển khai & Bảo trì)
+     Triển khai
+        Pilot 1–2 cơ sở, theo dõi chỉ số; mở rộng theo cụm; canary/blue-green cho bản cập nhật.
+     Vận hành
+        Giám sát qua dashboard (APM, logs, metrics), cảnh báo sự cố, on-call.
+     Sao lưu & khôi phục
+        Backup định kỳ, diễn tập khôi phục theo RPO/RTO.
+     Hỗ trợ & đào tạo
+        Tài liệu hướng dẫn, video ngắn cho nhân viên & người dân; kênh hỗ trợ.
+     Bảo trì & cải tiến
+        Chu kỳ cập nhật an ninh, vá lỗi; tối ưu lịch hẹn theo dữ liệu thực; lộ trình tính năng mới (xếp hàng thông minh, tích hợp hồ sơ sức khỏe).
+     Quản trị thay đổi & tuân thủ
+        Quy trình phê duyệt thay đổi, lưu vết, kiểm toán định kỳ, tuân thủ quy định bảo vệ dữ liệu cá nhân.

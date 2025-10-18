@@ -1,0 +1,33 @@
+Planning (Lập kế hoạch)
+Xác định mục tiêu của hệ thống điểm danh, phạm vi dự án,
+đối tượng sử dụng (sinh viên, giảng viên, phòng đào tạo).
+Lên kế hoạch nguồn lực, thời gian và ngân sách.
+
+Analysis (Phân tích yêu cầu)
+Thu thập yêu cầu từ người dùng:
+giảng viên muốn tạo lớp và điểm danh nhanh;
+sinh viên muốn xem lịch học và trạng thái điểm danh.
+Phân tích chức năng, dữ liệu và luồng nghiệp vụ.
+
+Design (Thiết kế hệ thống)
+Thiết kế giao diện ứng dụng (UI/UX), cấu trúc cơ sở dữ liệu
+(bảng SinhVien, LopHoc, DiemDanh).
+Xây dựng sơ đồ luồng dữ liệu (DFD), sơ đồ lớp
+và kiến trúc tổng thể của hệ thống.
+
+Implementation (Lập trình/triển khai)
+Viết mã cho ứng dụng: xây dựng chức năng đăng nhập,
+tạo lớp học, điểm danh bằng mã QR hoặc nhận diện khuôn mặt.
+Lưu dữ liệu lên server hoặc hệ thống cloud.
+
+Testing (Kiểm thử)
+Kiểm tra từng chức năng (unit test), kiểm thử tích hợp và giao diện.
+Đảm bảo hệ thống hoạt động đúng, không lỗi
+và dữ liệu được lưu trữ chính xác.
+
+Deployment & Maintenance (Triển khai và bảo trì)
+Triển khai ứng dụng lên hệ thống thật (server hoặc store),
+đào tạo người dùng.
+Theo dõi hoạt động, cập nhật tính năng mới
+(ví dụ: thêm báo cáo điểm danh tự động)
+và sửa lỗi khi có phát sinh.

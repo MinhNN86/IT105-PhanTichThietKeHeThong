@@ -1,0 +1,19 @@
+A. Mô tả chức năng người dùng có thể thực hiện trên ứng dụng học tiếng Anh
+     Sơ đồ UML phù hợp: Use Case Diagram
+     Giải thích: Dùng để mô tả các tác nhân (người dùng) và các chức năng mà họ có thể thực hiện trong hệ thống.
+
+B. Mô tả lớp NguoiDung, KhoaHoc, BaiHoc và quan hệ giữa chúng
+     Sơ đồ UML phù hợp: Class Diagram
+     Giải thích: Dùng để biểu diễn các lớp, thuộc tính, phương thức và mối quan hệ giữa các lớp trong hệ thống.
+
+C. Mô tả luồng học viên bắt đầu → vào học → làm bài → hoàn thành
+     Sơ đồ UML phù hợp: Activity Diagram
+     Giải thích: Dùng để mô tả luồng công việc hoặc quy trình nghiệp vụ của người dùng trong hệ thống.
+
+D. Mô tả cách hệ thống triển khai trên các máy chủ, thiết bị
+     Sơ đồ UML phù hợp: Deployment Diagram
+     Giải thích: Dùng để mô tả cấu trúc vật lý của hệ thống, gồm các nút triển khai (server, thiết bị) và mối liên kết giữa chúng.
+
+E. Mô tả thứ tự tương tác giữa học viên và hệ thống khi nộp bài
+     Sơ đồ UML phù hợp: Sequence Diagram
+     Giải thích: Dùng để mô tả trình tự các thông điệp trao đổi giữa các đối tượng theo thời gian trong quá trình thực hiện một chức năng.

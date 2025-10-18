@@ -1,0 +1,48 @@
+1. Tác nhân chính và chức năng tương ứng
+ Học viên
+  Đăng ký tài khoản, xác thực
+  Tìm/đăng ký khóa học, thanh toán
+  Học bài, làm bài tập/quiz, nộp bài
+  Xem điểm, chứng chỉ, lịch học, thông báo
+
+ Giảng viên
+  Tạo/chỉnh sửa khóa học, bài học, tài liệu, bài tập/quiz
+  Quản lý lớp, điểm danh, chấm điểm, phản hồi
+  Theo dõi tiến độ học viên, mở/khóa bài học
+
+ Admin
+  Quản trị người dùng và phân quyền (học viên/giảng viên/admin)
+  Cấu hình danh mục khóa học, học kỳ, ca học
+  Theo dõi báo cáo, thống kê, doanh thu
+  Giám sát hệ thống, nhật ký/audit, sao lưu/khôi phục
+
+2. Phân loại hệ thống thông tin phù hợp
+ TPS (Transaction Processing System)
+  Xử lý giao dịch đăng ký khóa học, thanh toán, nộp bài, chấm điểm (ghi nhận liên tục, chính xác, theo thời gian thực).
+
+ MIS (Management Information System)
+  Báo cáo định kỳ cho quản trị: số lượng đăng ký theo khóa/tháng, tỉ lệ hoàn thành, doanh thu, mức độ tương tác.
+
+ DSS (Decision Support System) – tùy mở rộng
+  Hỗ trợ ra quyết định: gợi ý khóa học theo hành vi học viên, dự báo nhu cầu lớp, tối ưu lịch mở lớp.
+
+3. Mô hình phát triển phần mềm đề xuất
+ Agile/Scrum
+  Yêu cầu thay đổi thường xuyên (nội dung khóa, học liệu, quy chế).
+  Cần ra MVP nhanh để thử nghiệm trải nghiệm học trực tuyến, thu phản hồi sớm.
+  Phù hợp tích hợp liên tục (CI/CD), phát hành sprint 2–3 tuần, đo lường A/B.
+  Cho phép ưu tiên backlog theo giá trị (thanh toán, học liệu, lớp live, báo cáo).
+
+ Khi nào cân nhắc khác
+  Spiral: nếu bổ sung tính năng rủi ro cao (proctoring AI, chống gian lận quy mô lớn).
+  Waterfall/V-Model: chỉ khi yêu cầu cố định, trọng kiểm thử chuẩn hóa (ít gặp trong edtech).
+
+4. Ba sơ đồ UML sẽ dùng khi thiết kế chi tiết
+ Use Case Diagram
+  Mô tả tác nhân (Học viên, Giảng viên, Admin) và các chức năng chính của hệ thống.
+
+ Class Diagram
+  Mô hình dữ liệu cốt lõi: NguoiDung, KhoaHoc, LopHoc, BaiHoc, BaiTap/Quiz, DangKy, ThanhToan, Diem, ChungChi và quan hệ giữa chúng.
+
+ Sequence Diagram
+  Trình tự tương tác cho các luồng quan trọng: Học viên đăng ký → thanh toán → kích hoạt khóa; Giảng viên chấm điểm → cập nhật điểm → thông báo cho học viên.

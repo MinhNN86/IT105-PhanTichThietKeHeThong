@@ -1,0 +1,42 @@
+Dự án A
+
+Mô tả: Phần mềm quản lý điểm cho trường cấp 2, yêu cầu rõ ràng
+Mô hình phù hợp: Waterfall (Thác nước)
+
+Lý do chọn:
+	Yêu cầu đã rõ ràng và ổn định, ít thay đổi.
+	Có thể chia thành các giai đoạn tuần tự: phân tích → thiết kế → lập trình → kiểm thử → triển khai.
+	Dễ quản lý, phù hợp với các dự án quy mô nhỏ đến trung bình, môi trường giáo dục ít biến động.
+
+Tóm tắt:
+Waterfall phù hợp với dự án có yêu cầu cố định, tài nguyên và quy trình rõ ràng.
+
+
+Dự án B
+
+Mô tả: Ứng dụng mobile đặt lịch khám bệnh, yêu cầu linh hoạt
+Mô hình phù hợp: Agile (Linh hoạt)
+
+Lý do chọn:
+	Yêu cầu có thể thay đổi thường xuyên dựa trên phản hồi người dùng.
+	Cần ra phiên bản sớm (MVP) để thử nghiệm, nhận phản hồi và cải tiến nhanh.
+	Môi trường mobile đòi hỏi tốc độ triển khai cao, liên tục cập nhật.
+	Agile (hoặc Scrum) cho phép phát triển theo sprint, trao đổi chặt chẽ với khách hàng.
+
+Tóm tắt:
+Agile phù hợp với dự án cần linh hoạt, cập nhật nhanh, phản hồi người dùng liên tục.
+
+
+Dự án C
+
+Mô tả: Hệ thống ngân hàng điện tử có bảo mật và độ phức tạp cao
+Mô hình phù hợp: Spiral (Xoắn ốc)
+
+Lý do chọn:
+	Dự án lớn, phức tạp, yêu cầu bảo mật và độ tin cậy cao.
+	Cần đánh giá rủi ro ở từng vòng phát triển (rủi ro bảo mật, tài chính, kỹ thuật).
+	Mô hình Spiral kết hợp ưu điểm của Waterfall (cấu trúc rõ) và Agile (lặp lại – cải tiến).
+	Phù hợp cho hệ thống có chu kỳ phát triển dài, chi phí cao, đòi hỏi kiểm thử và xác minh kỹ lưỡng.
+
+Tóm tắt:
+Spiral phù hợp cho dự án quy mô lớn, có rủi ro cao và yêu cầu an toàn nghiêm ngặt.

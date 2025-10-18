@@ -1,0 +1,22 @@
+ 1. Giao dịch bán hàng
+Loại hệ thống: TPS (Transaction Processing System)
+Giải thích:
+	TPS (Hệ thống xử lý giao dịch) dùng để ghi nhận và xử lý các giao dịch hàng ngày như bán hàng, xuất hoá đơn, cập nhật tồn kho, thanh toán,…
+	Đặc điểm: tốc độ nhanh, chính xác, xử lý khối lượng dữ liệu lớn theo thời gian thực.
+Ví dụ: Hệ thống POS (Point of Sale) tại quầy thu ngân, hệ thống ghi nhận đơn hàng online.
+
+2. Phân tích xu hướng kinh doanh
+Loại hệ thống: DSS (Decision Support System)
+Giải thích:
+	DSS (Hệ thống hỗ trợ ra quyết định) dùng để phân tích dữ liệu, phát hiện xu hướng, dự đoán doanh số.
+	hường sử dụng dữ liệu tổng hợp từ TPS, kết hợp với mô hình phân tích hoặc AI để hỗ trợ nhà quản lý đưa ra quyết định.
+Ví dụ: Báo cáo xu hướng tiêu thụ theo tháng, phân tích hành vi khách hàng, dự đoán doanh số quý tới.
+
+3. Bảng tổng quan hiệu suất hàng tháng dành cho CEO
+Loại hệ thống: EIS (Executive Information System)
+(Còn gọi là ESS – Executive Support System)
+Giải thích:
+	EIS cung cấp thông tin chiến lược và tóm tắt ở cấp cao cho ban lãnh đạo.
+	Hiển thị dashboard, chỉ số KPI, so sánh hiệu suất theo thời gian.
+	Giúp CEO ra quyết định chiến lược nhanh chóng dựa trên dữ liệu tổng hợp từ các hệ thống dưới (TPS, MIS, DSS).
+Ví dụ: Dashboard thể hiện doanh thu, lợi nhuận, tăng trưởng khách hàng hàng tháng.

@@ -1,0 +1,23 @@
+1. Chọn sơ đồ UML tương ứng (và dùng vào đâu)
+	Use Case Diagram: mô tả tác nhân và chức năng: Giảng viên tạo buổi học & tạo QR; Sinh viên quét mã để điểm danh; Phòng đào tạo xem thống kê.
+	Activity Diagram: luồng nghiệp vụ “tạo buổi học → phát QR → quét → xác thực → ghi nhận → tổng hợp thống kê”.
+	Sequence Diagram: tương tác thời gian thực khi sinh viên quét QR giữa Ứng dụng SV ↔ API ↔ CSDL.
+	Class Diagram: mô hình dữ liệu (SinhVien, LopHoc, BuoiHoc, QRToken, DiemDanh, GiangVien).
+	(Khi triển khai) có thể bổ sung Component/Deployment Diagram cho kiến trúc và hạ tầng.
+
+2. Trình bày 3 giai đoạn đầu của SDLC
+    1. Planning (Lập kế hoạch)
+ Xác định mục tiêu của hệ thống điểm danh, phạm vi dự án, đối tượng sử dụng gồm sinh viên, giảng viên, phòng đào tạo
+ Lên kế hoạch nguồn lực, thời gian và ngân sách
+
+2. Requirement Analysis (Phân tích yêu cầu)
+ Thu thập yêu cầu từ người dùng
+ Giảng viên muốn tạo buổi học và điểm danh nhanh
+ Sinh viên muốn xem lịch học và trạng thái điểm danh
+ Phòng đào tạo cần theo dõi và thống kê dữ liệu điểm danh
+ Phân tích chức năng, dữ liệu và luồng nghiệp vụ cần có
+
+3. System Design (Thiết kế hệ thống)
+ Thiết kế giao diện ứng dụng (UI/UX) và cấu trúc cơ sở dữ liệu gồm các bảng SinhVien, LopHoc, BuoiHoc, DiemDanh, QRToken
+ Xây dựng sơ đồ luồng dữ liệu (DFD), sơ đồ lớp và kiến trúc tổng thể hệ thống
+ Thiết kế cơ chế sinh mã QR động, xử lý xác thực khi sinh viên quét mã và ghi nhận dữ liệu điểm danh

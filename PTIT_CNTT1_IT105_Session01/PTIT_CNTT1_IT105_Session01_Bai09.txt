@@ -1,0 +1,73 @@
+1. Tác nhân và chức năng chính
+     Khách hàng
+          Tạo đơn hàng, nhập thông tin người gửi – người nhận, chọn dịch vụ hoặc thu hộ COD
+          Theo dõi trạng thái đơn hàng theo thời gian thực
+          Thực hiện yêu cầu đổi lịch, đổi địa chỉ, gửi khiếu nại, đánh giá chất lượng dịch vụ
+
+     Nhân viên vận chuyển (tài xế/shipper)
+          Nhận danh sách đơn được phân công
+          Nhận hàng tại kho, quét mã vận đơn khi giao – nhận
+          Cập nhật trạng thái: đã nhận, đang giao, không liên hệ được, giao thành công
+          Gửi bằng chứng giao hàng (POD) gồm hình ảnh, chữ ký, tọa độ GPS, thời gian
+
+     Điều phối viên hoặc nhân viên kho
+          Phân tuyến, gán đơn cho tài xế, chia hoặc hợp nhất tuyến
+          Theo dõi đơn hàng tồn đọng theo khu vực
+          Xử lý sự cố, đổi lịch, quản lý năng lực chuyến xe
+          In tem, vận đơn và thống kê hàng trong kho
+
+     Quản lý vận hành
+          Theo dõi báo cáo năng suất giao hàng, SLA, tỉ lệ giao đúng hẹn
+          Phân tích tồn đọng, chi phí theo khu vực hoặc tuyến đường
+          Đưa ra đề xuất tối ưu vận hành, điều phối nhân sự và tài nguyên
+
+     CEO
+          Xem tổng quan doanh thu, số lượng đơn, tỉ lệ giao đúng hẹn
+          Theo dõi bản đồ vùng hoạt động, KPI chiến lược và xu hướng tăng trưởng
+
+     Hệ thống bên ngoài
+          Tích hợp với cổng thanh toán, bản đồ định tuyến, SMS/Email/Push Notification
+          Kết nối hệ thống kế toán/ERP và thiết bị GPS, IoT theo dõi phương tiện
+
+
+2. Phân loại hệ thống thông tin
+ TPS (Transaction Processing System)
+      Xử lý giao dịch tạo đơn, tính cước, thanh toán, in vận đơn
+      Quét mã hàng tại kho, nhập – xuất hàng, cập nhật trạng thái giao hàng
+      Lưu trữ bằng chứng giao hàng (POD), dữ liệu vị trí GPS
+
+ MIS (Management Information System)
+      Tạo báo cáo định kỳ: số lượng đơn theo khu vực, tỷ lệ giao đúng hẹn, lý do thất bại
+      Phân tích năng suất nhân viên, chi phí vận hành, SLA theo tuần hoặc tháng
+
+ DSS (Decision Support System)
+      Tối ưu tuyến đường giao hàng theo thời gian, khoảng cách và năng lực phương tiện
+      Dự báo nhu cầu giao hàng theo mùa, khu vực hoặc sự kiện
+      Đề xuất phân bổ nhân sự, kho hàng, hoặc mở rộng tuyến mới
+
+ EIS (Executive Information System)
+      Dashboard tổng quan cho CEO: doanh thu, sản lượng đơn hàng, tỉ lệ giao đúng hẹn
+      Biểu đồ vùng hoạt động, heatmap, xu hướng tăng trưởng, KPI tài chính và vận hành
+
+
+3. Mô hình phát triển phần mềm phù hợp
+    Agile/Scrum kết hợp Kanban
+          Nghiệp vụ logistics thay đổi thường xuyên (chính sách COD, tuyến, phí vận chuyển)
+          Cần triển khai MVP sớm để kiểm nghiệm thực tế và nhận phản hồi từ nhân viên giao hàng
+          Phát triển theo sprint 2–3 tuần, dễ mở rộng và cải tiến liên tục
+          Có thể kết hợp Kanban cho nhóm vận hành, đảm bảo xử lý sự cố linh hoạt trong quá trình giao hàng
+          Khi phát triển module tối ưu tuyến hoặc dự báo, có thể dùng mini-spiral để kiểm thử rủi ro trước khi mở rộng
+
+
+4. Bốn sơ đồ UML sử dụng trong phân tích và thiết kế
+    Use Case Diagram
+        Thể hiện mối quan hệ giữa tác nhân (khách hàng, tài xế, điều phối, quản lý, CEO) và các chức năng mà họ thực hiện
+
+     Activity Diagram
+         Mô tả luồng công việc: từ khi tạo đơn, trung chuyển, giao hàng, đến khi hoàn tất hoặc hoàn trả
+
+     Sequence Diagram
+         Mô tả trình tự tương tác khi tài xế cập nhật trạng thái: ứng dụng tài xế → API → dịch vụ xử lý → cơ sở dữ liệu → gửi thông báo đến khách hàng
+
+     Class Diagram
+        Mô hình hóa các thực thể chính: DonHang, KienHang, KhachHang, Tuyen, Chuyen, Kho, TaiXe, TrangThai, POD, ChiPhi, SLA và mối quan hệ giữa chúng
