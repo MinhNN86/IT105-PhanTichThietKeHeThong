@@ -7,17 +7,17 @@
 
 2. Trình bày 3 giai đoạn đầu của SDLC
     1. Planning (Lập kế hoạch)
- Xác định mục tiêu của hệ thống điểm danh, phạm vi dự án, đối tượng sử dụng gồm sinh viên, giảng viên, phòng đào tạo
- Lên kế hoạch nguồn lực, thời gian và ngân sách
+         Xác định mục tiêu của hệ thống điểm danh, phạm vi dự án, đối tượng sử dụng gồm sinh viên, giảng viên, phòng đào tạo
+         Lên kế hoạch nguồn lực, thời gian và ngân sách
 
-2. Requirement Analysis (Phân tích yêu cầu)
- Thu thập yêu cầu từ người dùng
- Giảng viên muốn tạo buổi học và điểm danh nhanh
- Sinh viên muốn xem lịch học và trạng thái điểm danh
- Phòng đào tạo cần theo dõi và thống kê dữ liệu điểm danh
- Phân tích chức năng, dữ liệu và luồng nghiệp vụ cần có
+    2. Requirement Analysis (Phân tích yêu cầu)
+         Thu thập yêu cầu từ người dùng
+         Giảng viên muốn tạo buổi học và điểm danh nhanh
+         Sinh viên muốn xem lịch học và trạng thái điểm danh
+         Phòng đào tạo cần theo dõi và thống kê dữ liệu điểm danh
+         Phân tích chức năng, dữ liệu và luồng nghiệp vụ cần có
 
-3. System Design (Thiết kế hệ thống)
- Thiết kế giao diện ứng dụng (UI/UX) và cấu trúc cơ sở dữ liệu gồm các bảng SinhVien, LopHoc, BuoiHoc, DiemDanh, QRToken
- Xây dựng sơ đồ luồng dữ liệu (DFD), sơ đồ lớp và kiến trúc tổng thể hệ thống
- Thiết kế cơ chế sinh mã QR động, xử lý xác thực khi sinh viên quét mã và ghi nhận dữ liệu điểm danh
+    3. System Design (Thiết kế hệ thống)
+         Thiết kế giao diện ứng dụng (UI/UX) và cấu trúc cơ sở dữ liệu gồm các bảng SinhVien, LopHoc, BuoiHoc, DiemDanh, QRToken
+         Xây dựng sơ đồ luồng dữ liệu (DFD), sơ đồ lớp và kiến trúc tổng thể hệ thống
+         Thiết kế cơ chế sinh mã QR động, xử lý xác thực khi sinh viên quét mã và ghi nhận dữ liệu điểm danh
