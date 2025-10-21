@@ -1,0 +1,21 @@
+Yêu cầu chức năng (Functional Requirements)
+    Tìm kiếm sản phẩm: Hệ thống phải cho phép người dùng tìm kiếm sản phẩm dựa trên tên sản phẩm hoặc từ khóa liên quan.
+
+    Quản lý giỏ hàng: Hệ thống phải cho phép người dùng thêm sản phẩm vào giỏ hàng, thay
+    đổi số lượng, hoặc xóa sản phẩm khỏi giỏ hàng.
+    
+    Xử lý thanh toán: Hệ thống phải hỗ trợ ít nhất ba (3) phương thức thanh toán: Thẻ tín dụng (Visa/Mastercard),
+    Ví điện tử, và Trả tiền khi nhận hàng (COD).
+    
+    Gửi thông báo: Hệ thống phải tự động gửi email xác nhận đơn hàng đến địa chỉ email của khách hàng
+    ngay sau khi đơn hàng được đặt thành công.
+
+Yêu cầu phi chức năng (Non-Functional Requirements)
+Đây là các tiêu chí về việc hệ thống hoạt động như thế nào (chất lượng, ràng buộc):
+    Hiệu suất (Performance): Kết quả tìm kiếm sản phẩm phải được hiển thị cho người dùng trong vòng tối đa 2 giây.
+
+    Bảo mật (Security): Mọi thông tin thanh toán (đặc biệt là thông tin thẻ tín dụng) phải được mã hóa (sử dụng SSL/TLS)
+    trong quá trình truyền tải dữ liệu giữa trình duyệt của khách và máy chủ.
+
+    Tính khả dụng (Usability): Giao diện của quy trình thanh toán (checkout) phải đơn giản,
+    rõ ràng để một người dùng mới có thể hoàn tất việc đặt hàng trong vòng dưới 90 giây (tính từ lúc ở giỏ hàng).

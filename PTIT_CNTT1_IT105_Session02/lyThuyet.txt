@@ -1,0 +1,163 @@
+Lesson 1: Tổng Quan về môi trường hệ thống
+    1. Khái niệm:
+    Môi trường hệ thống là tập hợp các yếu tố bên trong và bên ngoài ảnh hưởng đến hoạt động của hệ thống, gồm yếu tố vật lý, con người, quy trình, công nghệ và chính sách.
+    → Ảnh hưởng trực tiếp đến hiệu quả và khả năng thích ứng của hệ thống.
+
+    2. Phân loại:
+     Môi trường bên trong: Các yếu tố nằm trong tầm kiểm soát của tổ chức, gồm:
+      - Con người (nhân sự, quản lý)
+      - Quy trình (sản xuất, dịch vụ)
+      - Công nghệ (phần mềm, thiết bị)
+      - Văn hóa & chính sách nội bộ
+
+     Môi trường bên ngoài: Các yếu tố ngoài tầm kiểm soát, gồm:
+      - Thị trường (nhu cầu, đối thủ)
+      - Pháp lý (luật, quy định)
+      - Kinh tế (lãi suất, tỷ giá, GDP)
+      - Công nghệ (xu hướng mới, đổi mới)
+      - Xã hội – văn hóa (hành vi, xu hướng tiêu dùng)
+
+    3. Tầm quan trọng:
+    Hiểu rõ môi trường hệ thống giúp:
+     - Linh hoạt điều chỉnh chiến lược
+     - Nhận diện cơ hội và thách thức
+     - Nâng cao năng lực cạnh tranh
+
+    4. Các yếu tố ảnh hưởng chính:
+     - Công nghệ: thay đổi nhanh, tạo cơ hội và thách thức (VD: AI, Machine Learning)
+     - Xã hội – văn hóa: thay đổi thói quen, xu hướng tiêu dùng (VD: sản phẩm xanh, hữu cơ)
+     - Kinh tế: biến động vĩ mô, ảnh hưởng chi tiêu và hoạt động doanh nghiệp
+     - Pháp lý: quy định, luật, tiêu chuẩn bảo vệ dữ liệu, môi trường
+
+Lesson 2: Xác định Stakeholders và các nguồn yêu cầu
+    1. Định nghĩa:
+     Stakeholder (người có liên quan) là cá nhân, nhóm hoặc tổ chức có ảnh hưởng hoặc bị ảnh hưởng bởi dự án/hệ thống.
+     Họ có thể cung cấp yêu cầu, sử dụng hệ thống hoặc ra quyết định cho dự án.
+
+     Ví dụ:
+      - Khách hàng: người dùng phần mềm
+      - Nhà phát triển: xây dựng và duy trì hệ thống
+      - Quản lý dự án: giám sát tiến độ
+      - Nhà tài trợ: cung cấp vốn
+      - Người quản lý quy trình: đảm bảo phần mềm phù hợp hoạt động doanh nghiệp
+
+    2. Phân loại nhóm Stakeholder:
+     Primary Stakeholders (Nhóm chính):
+      Người trực tiếp sử dụng hoặc chịu ảnh hưởng trực tiếp từ hệ thống.
+      Ví dụ: Nhân viên bán hàng dùng phần mềm.
+
+     Secondary Stakeholders (Nhóm phụ):
+      Không sử dụng trực tiếp nhưng bị ảnh hưởng gián tiếp.
+      Ví dụ: Bộ phận tài chính, kho bãi.
+
+     Key Stakeholders (Nhóm chủ chốt):
+      Người có quyền quyết định hoặc ảnh hưởng lớn đến dự án.
+      Ví dụ: CTO, CEO, nhà đầu tư.
+
+     External Stakeholders (Nhóm bên ngoài):
+      Không thuộc tổ chức nhưng có tác động đến dự án.
+      Ví dụ: Cơ quan quản lý, nhà cung cấp, đối tác.
+
+    3. Ma trận Stakeholder:
+     Công cụ giúp phân loại stakeholders theo mức độ ảnh hưởng và quan tâm, để xác định cách tương tác phù hợp.
+
+     4 nhóm chính:
+      - High Influence – High Interest: Cập nhật và liên hệ thường xuyên (VD: Giám đốc, CTO).
+      - High Influence – Low Interest: Thông báo các thay đổi quan trọng (VD: Ban lãnh đạo).
+      - Low Influence – High Interest: Thông báo tiến độ (VD: Người dùng cuối).
+      - Low Influence – Low Interest: Chỉ thông báo khi có thay đổi lớn (VD: Nhà cung cấp).
+
+     Lợi ích:
+      Giúp ưu tiên nguồn lực, tập trung vào nhóm quan trọng nhất và quản lý truyền thông hiệu quả.
+
+    4. Nguồn yêu cầu (Requirement Sources):
+     Yêu cầu của dự án có thể đến từ nhiều nguồn khác nhau:
+      - Người dùng: Đề xuất tính năng, cải tiến quy trình (VD: xem tồn kho thời gian thực).
+      - Quản lý: Quan tâm đến hiệu suất, bảo mật, khả năng mở rộng (VD: xử lý 10,000 đơn/ngày).
+      - Đối tác/Nhà cung cấp: Đưa yêu cầu tích hợp hoặc tiêu chuẩn kỹ thuật (VD: hỗ trợ API thanh toán).
+      - Pháp lý/Quy định: Yêu cầu tuân thủ luật, bảo mật dữ liệu (VD: GDPR, bảo vệ thông tin người dùng).
+
+Lesson 3: Kỹ thuật thu thập yêu cầu: Phỏng vấn, Quan sát, Khảo sát, Tài liệu
+    1. Phỏng vấn (Interview)
+     Định nghĩa: Trao đổi trực tiếp với stakeholders để khai thác thông tin và yêu cầu hệ thống.
+     Khi sử dụng: Khi yêu cầu chưa rõ, cần chi tiết, hoặc cần chuyên môn sâu.
+     Mục đích: Hiểu rõ mong muốn, phát hiện vấn đề tiềm ẩn.
+     Ưu điểm:
+      - Thu thập thông tin sâu, linh hoạt, có thể giải thích trực tiếp.
+     Nhược điểm:
+      - Mất thời gian, phụ thuộc kỹ năng phỏng vấn, thông tin dễ mang tính chủ quan.
+     Ví dụ: Phỏng vấn bác sĩ và y tá khi xây dựng phần mềm quản lý bệnh viện.
+
+    2. Quan sát (Observation)
+     Định nghĩa: Theo dõi trực tiếp cách stakeholders làm việc trong môi trường thực tế.
+     Khi sử dụng: Khi cần hiểu quy trình thực tế hoặc hành vi khó diễn tả bằng lời.
+     Mục đích: Xác định quy trình, vấn đề thực tế và yêu cầu tiềm ẩn.
+     Ưu điểm:
+      - Thông tin chính xác, hiểu bối cảnh thật, phát hiện yêu cầu ẩn.
+     Nhược điểm:
+      - Tốn thời gian và chi phí, dễ bỏ sót, mang tính chủ quan.
+     Ví dụ: Quan sát nhân viên kho khi nhập hàng để tìm chỗ tự động hóa.
+
+    3. Khảo sát (Survey / Questionnaire)
+     Định nghĩa: Thu thập thông tin qua bảng câu hỏi gửi đến nhiều người.
+     Khi sử dụng: Khi cần ý kiến từ nhóm lớn, dữ liệu định lượng.
+     Mục đích: Thu thập dữ liệu nhanh, phục vụ phân tích thống kê.
+     Ưu điểm:
+      - Nhanh, rẻ, dễ phân tích.
+     Nhược điểm:
+      - Thiếu chiều sâu, khó giải thích thêm, dễ mang tính chủ quan.
+     Ví dụ: Gửi khảo sát cho nhân viên về các tính năng cần trong ứng dụng quản lý công việc.
+
+    4. Phân tích tài liệu (Document Analysis)
+     Định nghĩa: Xem xét các tài liệu sẵn có như báo cáo, quy trình, tài liệu hệ thống cũ.
+     Khi sử dụng: Khi đã có hệ thống hoặc quy trình được ghi chép trước đó.
+     Mục đích: Hiểu quy trình hiện tại, xác minh hoặc mở rộng yêu cầu cũ.
+     Ưu điểm:
+      - Dễ truy cập, khách quan, tiết kiệm thời gian thu thập lại.
+     Nhược điểm:
+      - Tài liệu có thể thiếu, lỗi thời, hoặc khó đọc.
+     Ví dụ: Phân tích tài liệu quy trình kho trước khi triển khai hệ thống quản lý kho mới.
+
+Lesson 4: Phân biệt yêu cầu chức năng và phi chức năng
+    1. Khái niệm chung:
+     Trong phát triển hệ thống, yêu cầu được chia làm hai loại: yêu cầu chức năng (hệ thống làm gì) và yêu cầu phi chức năng (hệ thống hoạt động như thế nào).
+     Cả hai loại đều quan trọng, đảm bảo hệ thống vừa đầy đủ tính năng, vừa hiệu quả và chất lượng cao.
+
+    2. Yêu cầu chức năng (Functional Requirements)
+     Định nghĩa: Mô tả các hành động, tính năng hoặc dịch vụ mà hệ thống phải thực hiện.
+     Khi dùng: Khi cần xác định các chức năng phục vụ trực tiếp người dùng.
+     Mục đích: Xác định rõ hệ thống phải làm gì để đáp ứng nhu cầu thực tế.
+     Ví dụ:
+      - “Hệ thống cho phép tạo, sửa, và thanh toán đơn hàng.”
+      - “Hệ thống cho phép chuyển khoản giữa các tài khoản.”
+     Ưu điểm:
+      - Rõ ràng, cụ thể, dễ kiểm thử.
+     Nhược điểm:
+      - Không phản ánh chất lượng hoạt động (tốc độ, bảo mật…).
+      - Dễ thiếu sót nếu phân tích không đầy đủ.
+
+    3. Yêu cầu phi chức năng (Non-functional Requirements)
+     Định nghĩa: Mô tả đặc tính, tiêu chuẩn, điều kiện hoạt động mà hệ thống phải đạt.
+     Khi dùng: Khi cần đặt tiêu chí về chất lượng, hiệu suất, bảo mật, khả năng mở rộng.
+     Mục đích: Đảm bảo hệ thống hoạt động ổn định, hiệu quả, an toàn và thân thiện.
+     Ví dụ:
+      - Hiệu suất: “Xử lý 1000 giao dịch/giây.”
+      - Bảo mật: “Mã hóa toàn bộ dữ liệu cá nhân.”
+      - Mở rộng: “Hệ thống chịu được gấp đôi người dùng sau 6 tháng.”
+      - Sử dụng: “Giao diện đơn giản, tương thích desktop và mobile.”
+     Ưu điểm:
+      - Đảm bảo chất lượng, hiệu suất, trải nghiệm người dùng.
+     Nhược điểm:
+      - Khó đo lường, khó kiểm thử trực tiếp, tốn chi phí thực hiện.
+
+    4. Sự khác biệt giữa hai loại yêu cầu:
+     - Yêu cầu chức năng: Mô tả hệ thống làm gì → trực tiếp ảnh hưởng đến hành động người dùng.
+     - Yêu cầu phi chức năng: Mô tả hệ thống vận hành thế nào → ảnh hưởng gián tiếp đến trải nghiệm người dùng.
+     Ví dụ:
+      - Chức năng: “Hệ thống cho phép đăng nhập.”
+      - Phi chức năng: “Hệ thống phục vụ 1000 người dùng cùng lúc không bị chậm.”
+
+    5. Tầm quan trọng của việc phân biệt:
+     - Xây dựng hệ thống toàn diện: Đảm bảo có đủ tính năng và đạt chất lượng cao.
+     - Đảm bảo hiệu suất và bảo mật: Giúp hệ thống hoạt động ổn định, đáng tin cậy.
+     - Quản lý kỳ vọng stakeholders: Giúp xác định rõ phạm vi, tiêu chí chất lượng, và thỏa mãn nhu cầu người dùng.

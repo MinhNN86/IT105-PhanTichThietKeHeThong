@@ -1,0 +1,37 @@
+1. Giới thiệu (Introduction)
+    Trình bày tổng quan về hệ thống, mục tiêu phát triển, phạm vi áp dụng và đối tượng sử dụng. Phần này
+    giúp người đọc hiểu bối cảnh và mục đích của phần mềm.
+
+2. Mô tả tổng quan (Overall Description)
+    Cung cấp cái nhìn tổng thể về hệ thống, bao gồm môi trường hoạt động, ràng buộc, giả định, và các thành
+    phần liên quan. Phần này mô tả hệ thống ở mức khái quát trước khi đi sâu vào chi tiết yêu cầu.
+
+3. Yêu cầu chức năng (Functional Requirements)
+    Liệt kê và mô tả chi tiết các chức năng mà hệ thống phải thực hiện, như quản lý người dùng, khóa học, bài 
+    giảng, kiểm tra, và báo cáo kết quả học tập.
+
+4. Yêu cầu phi chức năng (Non-Functional Requirements)
+    Trình bày các yêu cầu về hiệu năng, bảo mật, khả dụng, tính mở rộng,
+    và giao diện người dùng để đảm bảo chất lượng hệ thống.
+
+5. Giao diện người dùng (User Interface Requirements)
+    Mô tả bố cục, thành phần giao diện và cách người dùng tương tác với hệ thống
+    (đăng nhập, tham gia lớp học, xem điểm).
+
+6. Giao diện hệ thống bên ngoài (External Interface Requirements)
+    Trình bày cách hệ thống học trực tuyến tích hợp với các hệ thống hoặc dịch vụ khác
+    như Zoom, Google Meet, cổng thanh toán hoặc hệ thống quản lý sinh viên.
+
+7. Mô hình dữ liệu và cấu trúc hệ thống (System Models and Data Structures)
+    Bao gồm sơ đồ thực thể–quan hệ (ERD), sơ đồ lớp, hoặc mô tả cơ sở dữ liệu giúp minh họa cách
+    tổ chức và liên kết dữ liệu trong hệ thống.
+
+8. Ràng buộc và giả định (Constraints and Assumptions)
+    Liệt kê các giới hạn kỹ thuật, nghiệp vụ hoặc pháp lý mà hệ thống phải tuân theo, cùng các giả định
+    được đặt ra trong quá trình phát triển.
+
+9. Tiêu chí kiểm thử và đánh giá (Verification and Validation Criteria)
+    Mô tả cách thức kiểm thử và tiêu chí để đánh giá hệ thống đáp ứng đúng các yêu cầu đã đề ra.
+
+10. Phụ lục (Appendices)
+    Chứa tài liệu tham khảo, thuật ngữ chuyên ngành, hoặc biểu mẫu minh họa hỗ trợ cho các phần nội dung chính của tài liệu.

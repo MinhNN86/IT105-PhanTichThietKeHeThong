@@ -1,0 +1,33 @@
+1. Yêu cầu chức năng (Functional Requirements)
+    Các yêu cầu này mô tả những chức năng mà hệ thống cần thực hiện để phục vụ người dùng.
+
+    1.1 Quản lý tài khoản người dùng
+        Hệ thống cho phép người dùng (sinh viên, giảng viên, quản trị viên) đăng ký, đăng nhập và chỉnh sửa thông tin cá nhân.
+        Hỗ trợ xác thực người dùng qua email hoặc dịch vụ bên thứ ba (Google, Microsoft).
+
+    1.2 Quản lý khóa học
+        Giảng viên có thể tạo, chỉnh sửa, xóa và xuất bản khóa học.
+        Sinh viên có thể đăng ký, hủy đăng ký và theo dõi tiến độ học tập của các khóa học.
+        Quản trị viên có quyền duyệt hoặc ẩn khóa học không hợp lệ.
+
+    1.3 Quản lý bài giảng và kiểm tra
+        Hệ thống cho phép giảng viên tải lên tài liệu, video, bài tập và đề thi.
+        Học viên có thể làm bài trắc nghiệm trực tuyến, nộp bài tập và xem kết quả.
+        Hệ thống tự động chấm điểm trắc nghiệm và lưu lịch sử kết quả học tập.
+
+2. Yêu cầu phi chức năng (Non-Functional Requirements)
+    Các yêu cầu này mô tả chất lượng, hiệu năng, bảo mật và trải nghiệm sử dụng của hệ thống.
+
+    2.1 Hiệu năng (Performance)
+        Hệ thống phải có khả năng phục vụ đồng thời ít nhất 500 người dùng mà không bị gián đoạn.
+        Thời gian tải trang không vượt quá 3 giây đối với các nội dung học cơ bản.
+
+    2.2 Bảo mật (Security)
+        Dữ liệu người dùng và bài học phải được mã hóa khi lưu trữ và truyền tải.
+        Hệ thống phải có cơ chế phân quyền truy cập rõ ràng giữa sinh viên, giảng viên và quản trị viên.
+        Tự động đăng xuất người dùng sau 15 phút không hoạt động.
+
+    2.3 Tính khả dụng và ổn định (Availability & Reliability)
+        Hệ thống phải hoạt động liên tục 24/7 với độ sẵn sàng tối thiểu 99.5%.
+        Dữ liệu phải được sao lưu định kỳ hàng ngày để tránh mất mát.
+        Hệ thống có cơ chế khôi phục sau lỗi (backup & restore) nhanh chóng.

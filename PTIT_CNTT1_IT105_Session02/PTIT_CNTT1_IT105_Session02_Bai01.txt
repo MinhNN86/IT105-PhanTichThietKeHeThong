@@ -1,0 +1,65 @@
+1. Người dùng cuối (End Users)
+    Những người trực tiếp sử dụng và tương tác với hệ thống hằng ngày để học tập hoặc giảng dạy.
+    Bao gồm:
+        Sinh viên / Học viên: Đăng ký khóa học, tham gia lớp học, làm bài kiểm tra, theo dõi kết quả học tập.
+        Giảng viên / Giáo viên: Tạo khóa học, tải lên tài liệu giảng dạy, giao bài tập, chấm điểm, phản hồi cho học viên.
+        Quản trị viên (Admin): Quản lý tài khoản người dùng, khóa học, lịch học, phân quyền truy cập và xử lý sự cố.
+    Mục tiêu:
+        Giao diện dễ sử dụng, truy cập được từ nhiều thiết bị (máy tính, điện thoại).
+        Quản lý học tập thuận tiện và minh bạch.
+        Hỗ trợ tương tác giữa giảng viên và học viên (qua chat, video, diễn đàn...).
+
+2. Nhà tài trợ (Sponsor)
+    Là cá nhân hoặc tổ chức chịu trách nhiệm về tài chính, hoạch định và triển khai dự án hệ thống học trực tuyến.
+    Bao gồm:
+        Ban giám hiệu nhà trường hoặc lãnh đạo tổ chức giáo dục.
+        Phòng công nghệ thông tin hoặc phòng đào tạo chịu trách nhiệm đầu tư, vận hành hệ thống.
+    Mục tiêu:
+        Tối ưu chi phí triển khai và vận hành.
+        Nâng cao chất lượng dạy – học và giảm chi phí đào tạo truyền thống.
+        Có hệ thống báo cáo, thống kê rõ ràng phục vụ công tác quản lý, kiểm định.
+
+3. Chuyên gia nghiệp vụ (Domain Experts / Business Analysts)
+    Những người hiểu rõ về nghiệp vụ đào tạo, quy trình giảng dạy và đánh giá kết quả học tập,
+    đóng vai trò tư vấn trong quá trình thiết kế hệ thống.
+
+    Bao gồm:
+    Cán bộ phòng đào tạo, chuyên viên quản lý chương trình học.
+    Chuyên gia thiết kế chương trình giảng dạy (Instructional Designer).
+    Giảng viên có kinh nghiệm, tư vấn về yêu cầu học thuật và sư phạm.
+
+    Mục tiêu:
+    Đảm bảo hệ thống đáp ứng đúng quy trình đào tạo của tổ chức.
+    Chuẩn hóa cấu trúc khóa học, đánh giá và cấp chứng chỉ.
+    Đưa ra yêu cầu chi tiết giúp đội ngũ kỹ thuật thiết kế hệ thống phù hợp.
+
+4. Bộ phận kỹ thuật (Technical Team)
+    Nhóm chịu trách nhiệm phân tích, thiết kế, xây dựng, kiểm thử và triển khai hệ thống học trực tuyến.
+
+    Bao gồm:
+    Quản lý dự án (Project Manager): Điều phối tiến độ, kết nối giữa sponsor và đội phát triển.
+    Lập trình viên (Developers): Xây dựng hệ thống (backend, frontend, mobile app).
+    Quản trị cơ sở dữ liệu (Database Administrator): Thiết kế, bảo mật và sao lưu dữ liệu học viên, khóa học.
+    Thiết kế giao diện (UI/UX Designer): Tạo trải nghiệm người dùng dễ sử dụng, thân thiện.
+    Kiểm thử viên (Tester / QA): Kiểm tra chức năng, hiệu năng, bảo mật.
+    Quản trị hệ thống hoặc DevOps: Triển khai và bảo trì hệ thống trên máy chủ hoặc nền tảng cloud.
+
+    Mục tiêu:
+    Đảm bảo hệ thống hoạt động ổn định, nhanh, bảo mật.
+    Dễ dàng mở rộng khi số lượng người dùng tăng.
+    Hỗ trợ nâng cấp, bảo trì và tích hợp với các công cụ học trực tuyến khác (Zoom, Google Meet, Moodle...).
+
+5. Bên thứ ba (Third Parties)
+    Các tổ chức, cá nhân hoặc dịch vụ bên ngoài có liên quan đến hệ thống học trực tuyến.
+
+    Bao gồm:
+    Nhà cung cấp dịch vụ lưu trữ đám mây (Cloud providers như AWS, Azure, Google Cloud).
+    Nền tảng học tập bên thứ ba (Coursera, Zoom, Google Classroom).
+    Hệ thống thanh toán trực tuyến (VNPay, PayPal, Momo).
+    Dịch vụ xác thực tài khoản (Google, Facebook, Microsoft SSO).
+    Nhà cung cấp nội dung học tập (ebook, video, tài liệu học thuật).
+
+    Mục tiêu:
+    Hỗ trợ tích hợp công cụ và dịch vụ giúp hệ thống hoạt động hiệu quả hơn.
+    Đảm bảo an toàn, tính tương thích và độ tin cậy trong kết nối.
+    Duy trì hỗ trợ kỹ thuật và cập nhật bảo mật định kỳ.

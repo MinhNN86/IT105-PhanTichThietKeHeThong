@@ -1,0 +1,16 @@
+Các yếu tố thuộc môi trường hệ thống phần mềm học trực tuyến gồm:
+
+    Người dùng: Sinh viên, giảng viên, quản trị viên, khách truy cập.
+
+    Phần cứng: Máy chủ lưu trữ, máy trạm (máy tính, laptop, smartphone, tablet), thiết bị mạng, camera và micro phục vụ học trực tuyến.
+
+    Phần mềm: Hệ điều hành (Windows, macOS, Linux), trình duyệt web (Chrome, Edge, Safari),
+        hệ quản trị cơ sở dữ liệu (MySQL, PostgreSQL), các công cụ hỗ trợ dạy học (Zoom, Google Meet, Microsoft Teams).
+
+    Hệ thống bên ngoài: Dịch vụ xác thực tài khoản (Google, Microsoft), cổng thanh toán trực tuyến (VNPay, PayPal), 
+        dịch vụ email (Gmail, Outlook), nền tảng lưu trữ đám mây (AWS, Google Cloud).
+
+    Quy trình nghiệp vụ: Đăng ký khóa học, tổ chức lớp học, nộp bài tập, chấm điểm, phản hồi kết quả, cấp chứng chỉ.
+
+    Luật lệ và quy định: Chính sách bảo mật dữ liệu cá nhân (GDPR, Nghị định 13/2023/NĐ-CP),
+        quy định về sở hữu trí tuệ, quy chế đào tạo trực tuyến của Bộ Giáo dục và Đào tạo.

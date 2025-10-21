@@ -1,0 +1,67 @@
+1. Phỏng vấn (Interview)
+
+    Ưu điểm:
+        Thu được thông tin chi tiết, sâu về quy trình nghiệp vụ.
+        Có thể làm rõ các điểm mơ hồ hoặc mâu thuẫn trong yêu cầu.
+
+    Hạn chế:
+        Tốn thời gian, phụ thuộc vào kỹ năng người phỏng vấn.
+        Dễ bị ảnh hưởng bởi ý kiến chủ quan của người trả lời.
+
+    Khi nên dùng:
+        Khi cần hiểu sâu quy trình nghiệp vụ hoặc yêu cầu từ các bên liên quan chính.
+
+    Tình huống ví dụ:
+        Phỏng vấn giảng viên và quản trị viên để hiểu quy trình tạo khóa học,
+        chấm điểm và cấp chứng chỉ trong hệ thống học trực tuyến.
+
+2. Bảng câu hỏi (Questionnaire / Survey)
+
+    Ưu điểm:
+        Thu thập dữ liệu từ nhiều người trong thời gian ngắn.
+        Dễ thống kê và xử lý dữ liệu định lượng.
+
+    Hạn chế:
+        Câu trả lời thường thiếu chiều sâu, khó làm rõ ý.
+        Tỷ lệ phản hồi có thể thấp nếu người tham gia không quan tâm.
+
+    Khi nên dùng:
+        Khi cần khảo sát nhiều người dùng (sinh viên, học viên) để xác định nhu cầu chung.
+
+    Tình huống ví dụ:
+        Gửi bảng khảo sát đến 500 sinh viên để xác định tính năng cần thiết nhất trong phần mềm học online
+        (ví dụ: chat nhóm, quiz tự động, điểm danh tự động).
+
+3. Quan sát (Observation)
+
+    Ưu điểm:
+        Giúp nhà phân tích thấy quy trình thật sự diễn ra thay vì nghe mô tả.
+        Phát hiện các vấn đề tiềm ẩn mà người dùng không nhận ra.
+
+    Hạn chế:
+        Tốn thời gian, chỉ phù hợp với quy trình có thể quan sát được.
+        Người được quan sát có thể thay đổi hành vi (hiệu ứng Hawthorne).
+
+    Khi nên dùng:
+        Khi muốn xác nhận quy trình thực tế hoặc phát hiện các thao tác bất hợp lý.
+
+    Tình huống ví dụ:
+        Quan sát sinh viên và giảng viên sử dụng hệ thống học trực tuyến 
+        hiện tại để phát hiện thao tác rườm rà khi nộp bài hoặc tải video.
+
+4. Workshop / Brainstorming (Hội thảo, động não nhóm)
+
+    Ưu điểm:
+        Tập hợp nhiều góc nhìn cùng lúc, tạo ý tưởng mới.
+        Tăng tính đồng thuận giữa các bên liên quan.
+
+    Hạn chế:
+        Khó điều phối nếu nhóm đông hoặc có mâu thuẫn ý kiến.
+        Dễ đi lệch mục tiêu nếu không có người điều phối tốt.
+
+    Khi nên dùng:
+        Khi cần xác định phạm vi dự án, tính năng tổng thể hoặc khi nhiều bên cùng tham gia.
+
+    Tình huống ví dụ:
+        Tổ chức buổi workshop với ban giám hiệu, phòng đào tạo, giảng viên và
+        đại diện sinh viên để xác định chức năng chính của hệ thống E-learning.

@@ -1,0 +1,30 @@
+Khách hàng (Customer)
+
+    Vai trò: Là người sử dụng dịch vụ đặt giao hàng qua ứng dụng hoặc website.
+    Mối quan tâm: Muốn đơn hàng được giao nhanh, đúng thời gian và địa điểm; có thể theo dõi trạng thái đơn hàng;
+    thanh toán an toàn và minh bạch.
+    Mức độ ưu tiên: Critical (rất quan trọng, ảnh hưởng trực tiếp đến thành công của hệ thống).
+
+Tài xế giao hàng (Delivery Driver)
+
+    Vai trò: Là người nhận và thực hiện các đơn giao hàng, cập nhật trạng thái vận chuyển.
+    Mối quan tâm: Cần ứng dụng dễ sử dụng, bản đồ và định vị chính xác, hệ thống ổn định, và chính sách thanh toán rõ ràng.
+    Mức độ ưu tiên: Critical (đảm bảo quá trình giao hàng thực tế diễn ra thuận lợi).
+
+Nhà quản lý hệ thống (Admin/Operator)
+
+    Vai trò: Giám sát toàn bộ hệ thống giao hàng, quản lý tài xế, xử lý sự cố và phản hồi khách hàng.
+    Mối quan tâm: Muốn có báo cáo thời gian thực, theo dõi hiệu suất, và phát hiện sớm các sự cố hoặc gian lận.
+    Mức độ ưu tiên: Major (quan trọng để vận hành hệ thống ổn định và hiệu quả).
+
+Đối tác cửa hàng (Merchant Partner)
+
+    Vai trò: Cung cấp sản phẩm cho khách hàng thông qua hệ thống giao hàng.
+    Mối quan tâm: Cần quản lý đơn hàng chính xác, nhận thông tin giao hàng đầy đủ, và được đối soát thanh toán kịp thời.
+    Mức độ ưu tiên: Major (cần thiết để đảm bảo chuỗi cung ứng và độ tin cậy dịch vụ).
+
+Nhà phát triển hệ thống (Development Team)
+
+    Vai trò: Xây dựng, triển khai và bảo trì hệ thống FastDelivery.
+    Mối quan tâm: Đảm bảo hệ thống ổn định, bảo mật, dễ mở rộng, và có thể tích hợp thêm tính năng mới.
+    Mức độ ưu tiên: Minor (quan trọng trong giai đoạn kỹ thuật, ít ảnh hưởng trực tiếp đến người dùng cuối).

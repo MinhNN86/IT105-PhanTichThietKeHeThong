@@ -1,0 +1,18 @@
+1. Người dùng (Users)
+    Bao gồm bác sĩ, y tá, nhân viên tiếp nhận, quản trị hệ thống, và bệnh nhân. Mỗi nhóm người 
+    dùng có mức độ hiểu biết công nghệ khác nhau, do đó hệ thống phải có giao diện trực quan, dễ sử dụng và phân quyền rõ ràng.
+2. Phần cứng (Hardware)
+    Hệ thống phải tương thích với nhiều thiết bị: máy tính bệnh viện, máy in hóa đơn, thiết bị xét nghiệm, 
+    máy siêu âm, máy chủ lưu trữ. Cần yêu cầu kỹ thuật đảm bảo hiệu năng, kết nối ổn định và khả năng tích hợp thiết bị y tế.
+3. Phần mềm (Software)
+    Phải chạy ổn định trên các hệ điều hành (Windows, Linux) và tương thích với 
+    phần mềm bệnh viện hiện có (phần mềm xét nghiệm, thanh toán, bảo hiểm). Yêu cầu API mở và khả năng cập nhật linh hoạt.
+4. Hệ thống bên ngoài (External Systems)
+    Liên kết với cơ quan bảo hiểm y tế, cổng thanh toán điện tử, và hệ thống quản lý hồ sơ y tế quốc gia.
+    Do đó yêu cầu kỹ thuật phải hỗ trợ giao tiếp qua API, mã hóa dữ liệu, và chuẩn trao đổi HL7/FHIR.
+5. Quy trình nghiệp vụ (Business Processes)
+    Bao gồm tiếp nhận bệnh nhân, khám bệnh, xét nghiệm, nhập viện, kê đơn, thanh toán, xuất viện.
+    Mỗi quy trình đòi hỏi hệ thống phản hồi nhanh, cập nhật tức thì và có khả năng kiểm soát truy cập theo vai trò.
+6. Luật lệ và quy định (Legal and Regulatory)
+    Hệ thống phải tuân thủ quy định của Bộ Y tế về quản lý hồ sơ bệnh án, bảo mật thông tin bệnh nhân 
+    (HIPAA, Nghị định 13/2023/NĐ-CP). Do đó cần mã hóa dữ liệu, phân quyền truy cập, và ghi log truy xuất đầy đủ.

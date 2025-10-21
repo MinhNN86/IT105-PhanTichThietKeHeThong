@@ -1,0 +1,112 @@
+Dự án: Hệ thống Đặt món ăn tại quán
+
+1. Giới thiệu (Introduction)
+    Mô tả tổng quan về tài liệu SRS, mục tiêu và đối tượng của tài liệu.
+
+    1.1. Mục đích (Purpose):
+        Mô tả: Nêu rõ mục đích của tài liệu này là để đặc tả các yêu cầu chức năng và phi chức năng cho Hệ thống 
+        Đặt món ăn tại quán. Đây là tài liệu gốc để đội phát triển, kiểm thử, và các bên liên quan (Quản lý nhà hàng) 
+        thống nhất về sản phẩm.
+
+    1.2. Phạm vi (Scope):
+        Mô tả: Xác định ranh giới của hệ thống. Ví dụ: "Hệ thống bao gồm việc nhân viên phục vụ nhận order
+        tại bàn qua máy tính bảng, gửi yêu cầu xuống bếp, và xử lý thanh toán. Hệ thống KHÔNG bao gồm quản
+        lý chấm công nhân viên hay quản lý kho nguyên vật liệu chi tiết."
+
+    1.3. Định nghĩa, Từ viết tắt (Definitions, Acronyms):
+        Mô tả: Liệt kê các thuật ngữ chuyên ngành hoặc từ viết tắt sẽ được sử dụng trong tài liệu 
+        (ví dụ: POS - Point of Sale, BOH - Back of House (Khu vực bếp), FOH - Front of House (Khu vực phục vụ)).
+
+    1.4. Tài liệu tham khảo (References):
+        Mô tả: Liệt kê các tài liệu liên quan khác (nếu có) như tài liệu quy trình nghiệp vụ của nhà hàng,
+        tài liệu thiết kế UI/UX (nếu đã có).
+
+2. Mô tả tổng quan (Overall Description)
+    Cung cấp cái nhìn ở mức cao về hệ thống, môi trường hoạt động, các bên liên quan và các ràng buộc.
+
+    2.1. Bối cảnh sản phẩm (Product Perspective):
+        Mô tả: Mô tả hệ thống này là một phần của một hệ thống lớn hơn (nếu có) hay là một hệ thống độc lập.
+        Ví dụ: "Hệ thống này sẽ tích hợp với hệ thống POS (máy tính tiền) hiện có để đồng bộ hóa đơn."
+
+    2.2. Chức năng chính (Product Functions):
+        Mô tả: Tóm tắt các chức năng chính mà hệ thống sẽ cung cấp,
+        ví dụ: Quản lý bàn, Ghi order, Xử lý tại bếp, Thanh toán, Báo cáo.
+
+    2.3. Đặc điểm người dùng (User Characteristics):
+        Mô tả: Xác định các nhóm người dùng sẽ tương tác với hệ thống.
+        Nhân viên Phục vụ (Waitstaff): Sử dụng máy tính bảng/điện thoại để ghi order, kiểm tra trạng thái món.
+        Nhân viên Bếp (Kitchen Staff): Sử dụng màn hình hiển thị (KDS - Kitchen Display System) hoặc máy in bếp để nhận và xác nhận món.
+        Thu ngân (Cashier): Quản lý việc thanh toán, in hóa đơn.
+        Quản lý (Manager): Cấu hình thực đơn, xem báo cáo doanh thu, quản lý tài khoản nhân viên.
+
+    2.4. Ràng buộc chung (General Constraints):
+        Mô tả: Liệt kê các yếu tố ràng buộc về kỹ thuật hoặc nghiệp vụ. 
+        Ví dụ: "Hệ thống phải chạy trên nền tảng Android (cho tablet) và iOS (cho quản lý)",
+        "Phải tích hợp được với máy in hóa đơn Xprinter".
+
+    2.5. Giả định và Phụ thuộc (Assumptions and Dependencies):
+        Mô tả: Nêu các giả định khi xây dựng hệ thống. Ví dụ: "Giả định rằng nhà hàng có hệ thống mạng Wi-Fi nội bộ ổn định."
+
+3. Yêu cầu cụ thể (Specific Requirements)
+    Đây là phần cốt lõi, mô tả chi tiết các yêu cầu của hệ thống.
+
+    3.1. Yêu cầu chức năng (Functional Requirements):
+        Mô tả: Chia nhỏ các chức năng mà hệ thống phải thực hiện, thường được nhóm theo module hoặc tính năng.
+
+    3.1.1. Module Quản lý Tài khoản (User Management):
+        Mô tả: Đăng nhập, đăng xuất, phân quyền (Quản lý có thể tạo/xóa tài khoản Nhân viên).
+
+    3.1.2. Module Quản lý Bàn (Table Management):
+        Mô tả: Hiển thị sơ đồ bàn (Trống, Đang có khách, Đã đặt trước), gộp bàn, tách bàn, chuyển bàn.
+
+    3.1.3. Module Quản lý Thực đơn (Menu Management):
+        Mô tả: Quản lý (thêm/sửa/xóa) các danh mục và món ăn, cài đặt giá, đánh dấu "Hết hàng" (Out of Stock).
+
+    3.1.4. Module Ghi Order (Order Taking):
+        Mô tả: Nhân viên chọn bàn, thêm món vào order, ghi chú đặc biệt cho món (ví dụ: "ít cay", "không hành"), gửi order xuống bếp.
+
+    3.1.5. Module Xử lý tại Bếp (Kitchen Processing - BOH):
+        Mô tả: Hệ thống (trên KDS hoặc máy in) phải hiển thị order mới cho bếp, Bếp có thể đánh dấu "Đang làm", "Hoàn thành" cho từng món.
+
+    3.1.6. Module Thanh toán (Payment Processing):
+        Mô tả: In hóa đơn tạm tính, áp dụng giảm giá/voucher, xử lý thanh toán (Tiền mặt, Thẻ, Ví điện tử), in hóa đơn cuối cùng (VAT nếu có).
+
+    3.1.7. Module Báo cáo (Reporting):
+        Mô tả: Quản lý có thể xem báo cáo doanh thu (theo ngày/tuần/tháng), báo cáo các món bán chạy nhất.
+
+    3.2. Yêu cầu phi chức năng (Non-Functional Requirements):
+        Mô tả: Mô tả các tiêu chí về chất lượng và hiệu suất của hệ thống.
+
+    3.2.1. Hiệu suất (Performance):
+        Mô tả: Ví dụ: "Order gửi từ tablet của nhân viên phải xuất hiện ở màn hình bếp trong vòng 2 giây."
+
+    3.2.2. Tính khả dụng (Usability):
+        Mô tả: Ví dụ: "Giao diện phải trực quan, nhân viên mới có thể học cách sử dụng các chức năng order cơ bản trong vòng 15 phút."
+
+    3.2.3. Độ tin cậy (Reliability):
+        Mô tả: Ví dụ: "Hệ thống phải có khả năng hoạt động offline (cho phép ghi order khi mất Wi-Fi) và tự động đồng bộ khi có mạng trở lại."
+
+    3.2.4. Bảo mật (Security):
+        Mô tả: Ví dụ: "Nhân viên phục vụ không thể truy cập chức năng báo cáo doanh thu hoặc thay đổi giá món ăn."
+
+    3.2.5. Khả năng tương thích (Compatibility):
+        Mô tả: Ví dụ: "Ứng dụng trên tablet phải tương thích với các thiết bị Android từ phiên bản 9.0 trở lên."
+
+    3.3. Yêu cầu Giao diện (Interface Requirements):
+        Mô tả: Đặc tả cách hệ thống tương tác với các thành phần khác.
+
+    3.3.1. Giao diện Người dùng (User Interfaces - UI):
+        Mô tả: Sơ bộ về bố cục, màu sắc thương hiệu, các yếu tố điều hướng chính (sẽ được chi tiết hóa trong tài liệu thiết kế).
+
+    3.3.2. Giao diện Phần cứng (Hardware Interfaces):
+        Mô tả: Đặc tả cách hệ thống giao tiếp với phần cứng: máy in hóa đơn (in qua LAN/Bluetooth), máy quẹt thẻ POS, màn hình KDS.
+
+    3.3.3. Giao diện Phần mềm (Software Interfaces):
+        Mô tả: Đặc tả cách hệ thống giao tiếp với các phần mềm khác, ví dụ: API để kết nối với hệ thống Kế toán hoặc hệ thống Quản lý kho (Inventory).
+
+4. Phụ lục (Appendices)
+    4.1. Sơ đồ Use Case (Use Case Diagrams):
+        Mô tả: (Tùy chọn) Cung cấp các sơ đồ Use Case chi tiết cho các kịch bản chính (ví dụ: "Đặt món", "Thanh toán").
+
+    4.2. Mô hình Dữ liệu Sơ bộ (Data Model):
+        Mô tả: (Tùy chọn) Sơ đồ quan hệ thực thể (ERD) cơ bản cho các đối tượng chính như Món ăn, Hóa đơn, Bàn.
