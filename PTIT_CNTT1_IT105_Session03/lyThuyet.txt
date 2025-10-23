@@ -1,0 +1,173 @@
+Lesson 1: Tổng quan về Use Case Diagram
+    1. Khái niệm:
+        Use Case Diagram (Sơ đồ ca sử dụng) là sơ đồ UML mô tả các chức năng hệ thống dưới góc nhìn người dùng (actor) – ai làm gì với hệ thống.
+
+    2. Mục đích:
+        Xác định các chức năng chính của hệ thống.
+        Giúp giao tiếp rõ ràng giữa BA, khách hàng, và developer.
+        Là cơ sở để viết mô tả chi tiết (Use Case Specification).
+        Giúp xác định phạm vi (scope) của hệ thống.
+
+    3. Thành phần chính:
+        Thành phần	    Vai trò	                                Ví dụ
+        Actor	        Người/hệ thống tương tác với hệ thống	Khách hàng, Nhân viên
+        Use Case	    Chức năng hệ thống cung cấp	            Đăng nhập, Đặt hàng
+        System Boundary	Khung bao toàn hệ thống	                “Hệ thống bán hàng”
+        Association	    Kết nối actor ↔ use case	            Actor ↔ Đặt hàng
+
+    4. Quy trình xây dựng:
+        Xác định các actor.
+        Xác định các use case tương ứng.
+        Liên kết actor và use case.
+        Đặt trong phạm vi hệ thống (system boundary).
+
+    5. Lợi ích:
+        Dễ hiểu, trực quan cho mọi đối tượng.
+        Giúp tránh thiếu chức năng.
+        Hỗ trợ phân tích nghiệp vụ, lên kế hoạch phát triển, và phân chia module.
+
+    6. Thời điểm sử dụng:
+        Trong giai đoạn thu thập và phân tích yêu cầu.
+        Khi trình bày phạm vi hệ thống với khách hàng.
+        Khi chia module và trách nhiệm cho nhóm phát triển.
+
+Lesson 2: Các thành phần chính trong sơ đồ Use Case
+
+    1. Actor (Tác nhân)
+        Là người hoặc hệ thống bên ngoài tương tác với hệ thống.
+        Không nằm trong hệ thống.
+        Phân loại:
+            Primary Actor: sử dụng hệ thống trực tiếp (VD: Khách hàng đặt hàng).
+            Secondary Actor: hỗ trợ hệ thống (VD: Ngân hàng xử lý thanh toán).
+        Ký hiệu: hình người (stickman).
+
+    2. Use Case (Trường hợp sử dụng)
+        Là một chức năng cụ thể mà hệ thống cung cấp cho actor.
+        Tên thường bắt đầu bằng động từ: “Đăng nhập”, “Đặt hàng”, “Thanh toán”.
+        Ký hiệu: hình elip chứa tên chức năng.
+
+    3. System Boundary (Ranh giới hệ thống)
+        Bao quanh toàn bộ các use case, xác định phạm vi hệ thống.
+        Cho biết những gì hệ thống chịu trách nhiệm và những gì nằm bên ngoài.
+        Ký hiệu: hình chữ nhật có tên hệ thống (VD: “Hệ thống bán hàng online”).
+
+    4. Quan hệ giữa các thành phần trong sơ đồ Use Case
+        Association (Kết hợp):
+            Là đường thẳng nối giữa actor và use case.
+            Biểu thị việc actor tương tác trực tiếp với chức năng.
+            Ví dụ: Khách hàng → Đặt hàng.
+
+        Include (Bao gồm):
+            Dạng quan hệ khi một use case luôn gọi thêm một use case khác.
+            Dùng để tránh lặp lại các bước chung giữa nhiều use case.
+            Ví dụ: “Thanh toán” luôn bao gồm “Kiểm tra giỏ hàng”.
+
+        Extend (Mở rộng):
+            Dạng quan hệ khi một use case có thể mở rộng thêm chức năng khác nếu cần.
+            Dùng cho tình huống tùy chọn hoặc điều kiện đặc biệt.
+            Ví dụ: “Xem sản phẩm” có thể mở rộng thêm “Xem đánh giá”.
+
+        Generalization (Kế thừa):
+            Biểu thị mối quan hệ kế thừa giữa các actor hoặc use case.
+            Actor hoặc use case con kế thừa đặc điểm từ actor/use case cha.
+            Ví dụ: “Khách hàng VIP” kế thừa từ “Khách hàng thường”.
+
+    5. Ví dụ minh họa – Website bán hàng online
+        Actor: Khách hàng
+        Use Case: Đăng ký, Đăng nhập, Xem sản phẩm, Đặt hàng, Thanh toán
+        Include: Đặt hàng → Xác nhận giỏ hàng
+        Extend: Xem sản phẩm → Xem đánh giá
+        System Boundary: “Hệ thống bán hàng online”
+
+Lesson 3: Các thành phần chính trong sơ đồ Use Case
+
+    1. Mục tiêu của sơ đồ Use Case:
+        Giúp hiểu rõ chức năng hệ thống cung cấp cho người dùng.
+        Xác định ai sử dụng hệ thống và họ sử dụng như thế nào.
+        Tăng cường giao tiếp giữa nhà phân tích, lập trình viên và khách hàng.
+
+    2. Các bước xây dựng sơ đồ Use Case
+        Bước 1: Xác định phạm vi hệ thống
+            Đặt tên rõ ràng cho hệ thống (ví dụ: “Hệ thống bán hàng online”).
+            Chỉ mô tả những gì hệ thống chịu trách nhiệm, không mở rộng ra toàn tổ chức.
+            Nên vẽ khung ranh giới hệ thống (System Boundary) trước.
+
+        Bước 2: Xác định các Actor
+            Tìm các đối tượng hoặc hệ thống bên ngoài có tương tác với hệ thống.
+            Chia thành Primary Actor (sử dụng chính) và Secondary Actor (hỗ trợ).
+            Mỗi Actor được vẽ bằng hình người (stickman) đặt bên ngoài hệ thống.
+
+        Bước 3: Xác định các Use Case
+            Liệt kê các chức năng chính mà hệ thống cung cấp cho actor.
+            Tên use case nên bắt đầu bằng động từ + danh từ (ví dụ: “Đặt hàng”, “Thanh toán”).
+            Mỗi use case là hình elip nằm bên trong khung hệ thống.
+
+        Bước 4: Vẽ các quan hệ cơ bản (Association)
+            Dùng đường thẳng để nối actor với use case mà họ thực hiện.
+            Ví dụ: Khách hàng → Đặt hàng.
+
+        Bước 5: Xác định mối quan hệ giữa các Use Case
+            Include: khi một use case luôn gọi một use case khác.
+            Extend: khi một use case mở rộng thêm chức năng tùy chọn.
+            Generalization: khi actor hoặc use case kế thừa hành vi của cái khác.
+            Dùng để tái sử dụng logic và giảm trùng lặp trong sơ đồ.
+
+        Bước 6: Kiểm tra và hoàn thiện
+            Đảm bảo mối liên kết hợp lý giữa actor và use case.
+            Kiểm tra đầy đủ chức năng, ranh giới đúng, không chồng chéo.
+            Thảo luận với nhóm hoặc khách hàng để xác nhận sơ đồ.
+    
+    3. Lưu ý khi vẽ sơ đồ:
+        Không mô tả chi tiết quy trình nội bộ (phần đó thuộc Use Case Specification).
+        Chỉ thể hiện các chức năng có thể quan sát được từ bên ngoài.
+        Giữ sơ đồ đơn giản, rõ ràng, dễ hiểu, tránh quan hệ chồng chéo.
+
+Lesson 4: Các thành phần chính trong sơ đồ Use Case
+   1. Vì sao cần mô tả chi tiết Use Case:
+        Sơ đồ Use Case chỉ cho cái nhìn tổng quan, chưa thể hiện rõ logic xử lý.
+        Cần Use Case Description để mô tả hành vi, điều kiện, và luồng xử lý cụ thể.
+        Mục tiêu: giúp phân tích viên, lập trình viên, tester hiểu rõ:
+            Chức năng làm gì
+            Ai thực hiện
+            Trình tự các bước
+            Điều kiện thành công/thất bại
+
+    2. Mẫu biểu mẫu mô tả Use Case
+        Tên Use Case: chức năng, bắt đầu bằng động từ (Đặt hàng, Đăng nhập...).
+        Mã Use Case (ID): định danh như UC01, UC02.
+        Actor liên quan: người hoặc hệ thống thực hiện.
+        Mô tả tóm tắt: mục đích của chức năng.
+        Điều kiện tiên quyết: điều kiện cần trước khi thực hiện.
+        Luồng chính (Main Flow): các bước thông thường theo trình tự.
+        Luồng phụ (Alternative Flow): các trường hợp rẽ nhánh.
+        Luồng lỗi (Exception Flow): xử lý khi có lỗi.
+        Kết quả thành công / thất bại: phản hồi của hệ thống tương ứng.
+        Ghi chú: thông tin đặc biệt (bảo mật, OTP, xác minh…).
+
+    3. Ví dụ – Use Case “Đặt hàng”:
+        Tên: Đặt hàng – ID: UC01 – Actor: Khách hàng
+        Điều kiện tiên quyết: đã đăng nhập, giỏ hàng không trống
+        Luồng chính:
+            Khách chọn “Thanh toán”
+            Hệ thống hiển thị thông tin
+            Khách xác nhận và gửi yêu cầu
+            Hệ thống tạo đơn hàng, hiển thị mã đơn
+
+        Luồng phụ: nếu có voucher → hệ thống kiểm tra và áp dụng
+        Luồng lỗi: nếu hết hàng → thông báo lỗi, không tạo đơn
+        Kết quả: hệ thống trả mã đơn hàng hoặc thông báo lỗi
+        Ghi chú: cần xác minh số điện thoại và địa chỉ
+
+    4. Lưu ý khi viết mô tả:
+
+        Nên:
+            Dùng ngôn ngữ nghiệp vụ dễ hiểu.
+            Viết theo trình tự logic và rõ ràng.
+            Tách riêng luồng chính – phụ – lỗi.
+            Dùng bullet points hoặc số thứ tự.
+
+        Không nên:
+            Dùng thuật ngữ kỹ thuật phức tạp.
+            Viết dài dòng, không có trình tự.
+            Gom toàn bộ vào một đoạn văn.
+            Viết chung chung “Hệ thống xử lý…”.
