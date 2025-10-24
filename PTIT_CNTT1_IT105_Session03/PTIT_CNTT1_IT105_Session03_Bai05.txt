@@ -1,0 +1,6 @@
+| Actor             | Loại      | Use Case phục vụ                                                                                           |
+| ----------------- | --------- | ---------------------------------------------------------------------------------------------------------- |
+| Khách hàng        | Primary   | Đăng ký/Đăng nhập, Tìm món ăn, Đặt món, Thanh toán đơn hàng                                                |
+| Tài xế giao hàng  | Primary   | Nhận đơn giao, Xem tuyến đường giao, Cập nhật trạng thái đơn, Xác nhận giao thành công                     |
+| Nhà hàng          | Primary   | Nhận và xác nhận đơn, Chuẩn bị món ăn, Cập nhật tình trạng món (hết/đổi), Xem lịch sử đơn                  |
+| Quản trị hệ thống | Secondary | Quản lý người dùng (khách hàng, tài xế, nhà hàng), Quản lý đơn hàng, Xử lý khiếu nại, Xem báo cáo thống kê |

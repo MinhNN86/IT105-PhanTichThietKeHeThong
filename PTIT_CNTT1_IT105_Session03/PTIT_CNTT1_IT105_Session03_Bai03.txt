@@ -1,0 +1,6 @@
+| Use Case A        | Use Case B        | Mối quan hệ   | Giải thích                                                                                                                |
+| ----------------- | ----------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Đặt hàng          | Kiểm tra giỏ hàng |  <<include>>  | Trong quy trình đặt hàng, hệ thống luôn phải xác thực giỏ (số lượng, tồn kho, giá, mã giảm giá…) trước khi tiếp tục.      |
+| Đặt hàng          | Đề xuất hoá đơn   |  <<extend>>   | Chỉ phát sinh khi người dùng chọn **xuất hoá đơn** (VAT/hoá đơn điện tử); không phải lúc nào cũng cần trong đặt hàng.     |
+| Đặt hàng          | Xem đánh giá      | Association   | Hai chức năng độc lập về mặt luồng: người dùng có thể xem đánh giá trước hoặc không cần xem vẫn đặt hàng.                 |
+| Kiểm tra giỏ hàng | Đề xuất hoá đơn   | Association   | Không có sự phụ thuộc trực tiếp; kiểm tra giỏ diễn ra trong checkout, còn đề xuất hoá đơn chỉ bật khi người dùng yêu cầu. |

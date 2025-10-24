@@ -1,0 +1,23 @@
+Tên:
+    Đặt hàng
+
+Actor:
+    Khách hàng (người dùng đặt món)
+    Hệ thống (ứng dụng giao đồ ăn)
+
+Mục tiêu:
+    Khách hàng đặt món ăn từ nhà hàng mong muốn và thanh toán đơn hàng để hệ thống xử lý và giao món đến đúng địa chỉ.
+
+Luồng chính:
+    Khách hàng mở ứng dụng và chọn nhà hàng muốn đặt.
+    Hệ thống hiển thị danh sách món ăn của nhà hàng.
+    Khách hàng chọn món ăn, số lượng, topping và thêm vào giỏ hàng.
+    Khách hàng kiểm tra giỏ hàng, xác nhận địa chỉ giao hàng và phương thức thanh toán.
+    Hệ thống tính tổng tiền (bao gồm phí vận chuyển và giảm giá nếu có).
+    Khách hàng nhấn “Đặt hàng”.
+    Hệ thống lưu thông tin đơn hàng, gửi thông báo xác nhận và chuyển đơn cho nhà hàng xử lý.
+
+Luồng lỗi (ngoại lệ):
+    4a. Nếu khách hàng chưa đăng nhập → Hệ thống yêu cầu đăng nhập trước khi đặt hàng.
+    5a. Nếu món ăn đã hết hoặc nhà hàng ngừng nhận đơn → Hệ thống hiển thị thông báo lỗi và yêu cầu chọn món khác.
+    6a. Nếu thanh toán thất bại → Hệ thống hiển thị thông báo lỗi và cho phép chọn lại phương thức thanh toán.
