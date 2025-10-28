@@ -1,7 +1,6 @@
-Lession 01: Tổng quan về Class trong UML
-    1. Mở đầu
-        Use Case Diagram cho biết hệ thống làm gì, còn Class Diagram cho biết hệ thống gồm những phần nào và chúng liên kết ra sao.
-        Đây là bước chuyển từ phân tích chức năng sang phân tích cấu trúc.
+Lession 01: Tổng quan về Class trong UML 1. Mở đầu
+Use Case Diagram cho biết hệ thống làm gì, còn Class Diagram cho biết hệ thống gồm những phần nào và chúng liên kết ra sao.
+Đây là bước chuyển từ phân tích chức năng sang phân tích cấu trúc.
 
     2. Tại sao cần Class Diagram
         •	Giống như bản vẽ kết cấu của ngôi nhà (so với Use Case là bản công năng).
@@ -25,13 +24,12 @@ Lession 01: Tổng quan về Class trong UML
 
     6. Kết luận
         Class Diagram mô tả cấu trúc dữ liệu và mối quan hệ giữa các phần trong hệ thống.
-        Hiểu rõ Class (khuôn mẫu) và Object (đối tượng cụ thể) là nền tảng của lập trình hướng đối tượng và thiết kế phần mềm chuyên nghiệp.    
+        Hiểu rõ Class (khuôn mẫu) và Object (đối tượng cụ thể) là nền tảng của lập trình hướng đối tượng và thiết kế phần mềm chuyên nghiệp.
 
-Lession 02: các thành phần của class
-    1. Class là gì
-    Class là bản thiết kế cho các đối tượng trong hệ thống, mô tả:
-        •	Thuộc tính (Attributes): điều mà đối tượng biết.
-        •	Phương thức (Methods): điều mà đối tượng làm được.
+Lession 02: các thành phần của class 1. Class là gì
+Class là bản thiết kế cho các đối tượng trong hệ thống, mô tả:
+• Thuộc tính (Attributes): điều mà đối tượng biết.
+• Phương thức (Methods): điều mà đối tượng làm được.
 
     Ví dụ: Class SinhVien có thuộc tính studentCode, name, date và phương thức registerForCourses(), seeScore().
 
@@ -52,17 +50,16 @@ Lession 02: các thành phần của class
     5. Thành phần Abstract (Trừu tượng)
         •	Class hoặc phương thức chưa có phần cài đặt cụ thể.
         •	Dùng khi Class cha chỉ định nghĩa hành động chung, Class con sẽ tự triển khai.
-        
+
     6. Kết luận
         •	Thuộc tính: điều đối tượng biết.
         •	Phương thức: điều đối tượng làm được.
         •	Static: dùng chung cho tất cả.
         •	Abstract: khuôn hành động chung, chưa có nội dung cụ thể.
 
-Lession 03: BỔ TỪ TRUY CẬP (ACCESS MODIFIERS) VÀ TÍNH ĐÓNG GÓI
-    1. Mở đầu
-    Ký hiệu +, -, #, ~ trong UML thể hiện mức độ truy cập của thuộc tính hoặc phương thức.
-    Chúng là “ổ khóa” bảo vệ dữ liệu, giúp hệ thống an toàn, dễ bảo trì và chuyên nghiệp hơn.
+Lession 03: BỔ TỪ TRUY CẬP (ACCESS MODIFIERS) VÀ TÍNH ĐÓNG GÓI 1. Mở đầu
+Ký hiệu +, -, #, ~ trong UML thể hiện mức độ truy cập của thuộc tính hoặc phương thức.
+Chúng là “ổ khóa” bảo vệ dữ liệu, giúp hệ thống an toàn, dễ bảo trì và chuyên nghiệp hơn.
 
     2. Khái niệm tính đóng gói (Encapsulation)
         •	Là nguyên tắc che giấu dữ liệu, chỉ cho phép truy cập qua các phương thức được kiểm soát.
@@ -90,50 +87,104 @@ Lession 03: BỔ TỪ TRUY CẬP (ACCESS MODIFIERS) VÀ TÍNH ĐÓNG GÓI
         •	Giữ mã nguồn gọn gàng, có tổ chức.
 
 Lession 04: Mối quan hệ giữa các class (Association, Dependency, Generalization, Aggregation, Composition)
-    1. Mở đầu
-    Các Class trong hệ thống không tồn tại riêng lẻ mà kết nối với nhau bằng các mối quan hệ (relationships) để mô tả cách chúng tương tác.
-    Ba nhóm chính gồm:
-        •	Quan hệ cấu trúc → cách các đối tượng “ghép lại”.
-        •	Quan hệ phân loại → cha – con, loại – thể loại.
-        •	Quan hệ phụ thuộc → tương tác tạm thời.
 
-    2. Nhóm 1 – Quan hệ Cấu trúc (Structural Relationships)
-        •	Association (Liên kết): Hai đối tượng gắn bó lâu dài, biết về nhau.
-    → Ví dụ: Student – Class.
-        •	Directed Association: Liên kết một chiều, chỉ một bên biết bên kia.
-    → Ví dụ: Order → Customer.
-        •	Aggregation (Kết tập): Quan hệ “có”, nhưng độc lập – ký hiệu hình thoi rỗng.
-    → Ví dụ: Department – Staff.
-        •	Composition (Thành phần): Quan hệ “có” nhưng ràng buộc chặt – chết cùng nhau, ký hiệu hình thoi đặc.
-    → Ví dụ: House – Room.
+Quan hệ cấu trúc (Structural):
 
-    3. Nhóm 2 – Quan hệ Phân loại (Classification Relationships)
-        •	Generalization (Kế thừa): Quan hệ “là một loại của” (is-a-kind-of), ký hiệu tam giác rỗng, mũi tên hướng lên lớp cha.
-    → Ví dụ: Mage và Warrior kế thừa từ Character.
-        •	Realization (Hiện thực hóa): Giữa Class và Interface, ký hiệu tam giác rỗng, nét đứt.
-    → Interface định nghĩa “làm gì”, Class hiện thực “làm thế nào”.
-    → Ví dụ: Bird và Plane hiện thực ICanFly.
+    Association: Hai lớp biết nhau, tồn tại lâu dài.
 
-    👉 Ghi nhớ:
-        •	Generalization → “Tôi là loại đó.”
-        •	Realization → “Tôi có thể làm điều đó.”
+    Directed Association: Liên kết một chiều (một lớp biết lớp kia).
 
-    4. Nhóm 3 – Quan hệ Phụ thuộc (Dependency Relationships)
-        •	Dependency (Phụ thuộc): Mối quan hệ yếu, tạm thời – ký hiệu mũi tên nét đứt.
-    → Ví dụ: Report gọi phương thức của Printer.
-        •	Usage (Sử dụng tạm thời): Trường hợp cụ thể của Dependency, gắn nhãn <<use>>.
-    → Ví dụ: Patient dùng BloodPressureMonitor để đo huyết áp rồi kết thúc liên kết.
+    Aggregation: Quan hệ “có” nhưng độc lập (thoi rỗng).
 
-    5. Ghi nhớ chung
-        •	Composition → gắn bó nhất (chết cùng nhau).
-        •	Dependency / Usage → lỏng lẻo nhất (chỉ dùng tạm).
-        •	Generalization / Realization → giúp tái sử dụng và tổ chức hệ thống tốt hơn.
-    → Chọn đúng loại quan hệ giúp sơ đồ rõ ràng, logic và dễ bảo trì.
+    Composition: Quan hệ “chứa” nhưng phụ thuộc chặt chẽ (thoi đặc).
 
-Lession 05: Bội số trong mối quan hệ (Multiplicity) (1-1, 1-N, N-N)
-    1. Vì sao cần Multiplicity
-    Khi nói “Lớp học có Sinh viên”, ta cần biết có bao nhiêu sinh viên – 1, nhiều, hay giới hạn cụ thể.
-    Multiplicity giúp thể hiện số lượng đối tượng liên kết giữa các class, làm bản thiết kế rõ ràng, chính xác và phản ánh đúng quy tắc nghiệp vụ.
+Quan hệ phân loại (Classification):
+
+    Generalization: Kế thừa (“là một loại của”).
+
+    Realization: Class hiện thực hóa interface (“có thể làm điều đó”).
+
+Quan hệ phụ thuộc (Dependency):
+
+    Dependency: Phụ thuộc tạm thời giữa hai lớp.
+
+    Usage: Dạng phụ thuộc ngắn hạn (thường ký hiệu <<use>>).
+
+Bảng tổng hợp các mối quan hệ
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Loại quan hệ</th>
+      <th>Ký hiệu UML</th>
+      <th>Mức độ gắn bó</th>
+      <th>Ví dụ</th>
+      <th>Ý nghĩa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Association</td>
+      <td>──</td>
+      <td>Vừa phải</td>
+      <td>Student – Class</td>
+      <td>Hai bên biết nhau, liên kết lâu dài</td>
+    </tr>
+    <tr>
+      <td>Directed Association</td>
+      <td>→</td>
+      <td>Một chiều</td>
+      <td>Order → Customer</td>
+      <td>Chỉ một bên biết bên kia</td>
+    </tr>
+    <tr>
+      <td>Aggregation</td>
+      <td>◇──</td>
+      <td>Lỏng lẻo</td>
+      <td>Department – Staff</td>
+      <td>Quan hệ “có” nhưng độc lập</td>
+    </tr>
+    <tr>
+      <td>Composition</td>
+      <td>◆──</td>
+      <td>Rất chặt chẽ</td>
+      <td>House – Room</td>
+      <td>Phụ thuộc hoàn toàn, “chết chung”</td>
+    </tr>
+    <tr>
+      <td>Generalization</td>
+      <td>▲</td>
+      <td>Mạnh</td>
+      <td>Warrior – Character</td>
+      <td>Là một loại của (kế thừa)</td>
+    </tr>
+    <tr>
+      <td>Realization</td>
+      <td>△</td>
+      <td>Trung bình</td>
+      <td>Bird – ICanFly</td>
+      <td>Hiện thực hóa interface</td>
+    </tr>
+    <tr>
+      <td>Dependency</td>
+      <td>──▶ (nét đứt)</td>
+      <td>Yếu</td>
+      <td>Report – Printer</td>
+      <td>Phụ thuộc tạm thời</td>
+    </tr>
+    <tr>
+      <td>Usage</td>
+      <td>&lt;&lt;use&gt;&gt;</td>
+      <td>Rất yếu</td>
+      <td>Patient – BloodPressureMonitor</td>
+      <td>Dùng tạm thời, không sở hữu nhau</td>
+    </tr>
+  </tbody>
+</table>
+
+Lession 05: Bội số trong mối quan hệ (Multiplicity) (1-1, 1-N, N-N) 1. Vì sao cần Multiplicity
+Khi nói “Lớp học có Sinh viên”, ta cần biết có bao nhiêu sinh viên – 1, nhiều, hay giới hạn cụ thể.
+Multiplicity giúp thể hiện số lượng đối tượng liên kết giữa các class, làm bản thiết kế rõ ràng, chính xác và phản ánh đúng quy tắc nghiệp vụ.
 
     Ví dụ: Một lớp có ít nhất 1 sinh viên, tối đa 50; một sinh viên học tối đa 8 môn.
 
@@ -171,10 +222,10 @@ Lession 05: Bội số trong mối quan hệ (Multiplicity) (1-1, 1-N, N-N)
     m..n → Giới hạn cụ thể
 
 Lession 06: Từ Use Case → Class Diagram
-    Mục tiêu
-        •	Rút Class từ Use Case bằng kỹ thuật Noun–Verb.
-        •	Thực hành quy trình 3 bước: Tìm → Sàng lọc → Lắp ghép.
-        •	Vẽ sơ khởi Class Diagram với quan hệ và multiplicity.
+Mục tiêu
+• Rút Class từ Use Case bằng kỹ thuật Noun–Verb.
+• Thực hành quy trình 3 bước: Tìm → Sàng lọc → Lắp ghép.
+• Vẽ sơ khởi Class Diagram với quan hệ và multiplicity.
 
     Ý tưởng cốt lõi (Noun–Verb)
         •	Danh từ (Noun) → ứng viên Class hoặc thuộc tính.
