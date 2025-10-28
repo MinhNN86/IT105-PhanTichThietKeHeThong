@@ -1,0 +1,7 @@
+|   Thành phần      |   Modifier (Phạm vi truy cập)   | Giải thích                                                                                                                                                            |
+| ----------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  username         | private                         | Là thông tin cá nhân của người dùng, không nên cho truy cập trực tiếp từ bên ngoài. Chỉ được truy cập thông qua phương thức getter/setter để đảm bảo an toàn dữ liệu. |
+|  password         | private                         | Là dữ liệu nhạy cảm, phải được bảo vệ. Chỉ các phương thức nội bộ (như login() hoặc resetPassword()) mới được phép truy cập.                                          |
+|  lastLoginTime    | protected                       | Có thể được kế thừa bởi các lớp con (ví dụ:  AdminUser ,  GuestUser ) để ghi lại hoặc kiểm tra thời gian đăng nhập, nhưng không cho phép thay đổi từ bên ngoài.       |
+|  login()          | public                          | Là hành động mà các lớp hoặc chương trình bên ngoài cần gọi để đăng nhập người dùng. Phải được truy cập công khai.                                                    |
+|  resetPassword()  | public                          | Cũng là một chức năng mà người dùng hoặc hệ thống có thể gọi khi quên mật khẩu. Cần công khai để sử dụng.                                                             |

@@ -1,0 +1,24 @@
+1. Book (Sách)
+	•	Vai trò: Lưu trữ thông tin của từng cuốn sách trong thư viện.
+	•	Thuộc tính: bookCode, title, author, publishYear, isAvailable.
+	•	Phương thức: displayInfo().
+
+2. Reader (Độc giả)
+	•	Vai trò: Đại diện cho người sử dụng thư viện – người mượn và trả sách.
+	•	Thuộc tính: readerID, name, address, phone.
+	•	Phương thức: borrowBook(), returnBook().
+
+3. Librarian (Nhân viên thư viện)
+	•	Vai trò: Quản lý hoạt động mượn – trả sách, thêm hoặc cập nhật thông tin sách.
+	•	Thuộc tính: staffID, name, position.
+	•	Phương thức: addBook(), updateBook(), manageTransaction().
+
+4. BorrowTransaction (Phiếu mượn/trả)
+	•	Vai trò: Ghi lại thông tin mỗi lần mượn hoặc trả sách.
+	•	Thuộc tính: transactionID, borrowDate, returnDate, status, reader, book.
+	•	Phương thức: markReturned().
+
+5. Library (Thư viện – tùy chọn)
+	•	Vai trò: Lớp trung tâm quản lý toàn hệ thống, chứa danh sách sách, độc giả, nhân viên và giao dịch.
+	•	Thuộc tính: books, readers, librarians, transactions.
+	•	Phương thức: findBook(), registerReader().
