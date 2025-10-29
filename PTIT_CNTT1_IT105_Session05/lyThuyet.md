@@ -398,5 +398,3 @@ State Diagram mô tả vòng đời của một đối tượng từ khi đượ
 ## Kết luận
 
 Quy trình 5 bước giúp tạo State Diagram rõ ràng, logic, mô tả trọn vẹn “cuộc đời” của đối tượng từ lúc sinh ra → hoạt động → kết thúc.
-
-Là công cụ trực quan giúp hiểu hành vi hệ thống và hỗ trợ thiết kế workflow.
