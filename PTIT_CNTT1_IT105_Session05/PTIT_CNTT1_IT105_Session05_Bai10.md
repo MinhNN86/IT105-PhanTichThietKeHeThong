@@ -1,3 +1,5 @@
+## Sequence Diagram
+
 ```mermaid
 sequenceDiagram
     actor SinhVien as Sinh viên
@@ -21,5 +23,20 @@ sequenceDiagram
         Server-->>UI: Thông báo lỗi (File không hợp lệ)
         UI-->>SinhVien: Hiển thị trạng thái: "Nộp thất bại"
     end
+
+```
+
+## State Diagram
+```mermaid
+stateDiagram-v2
+    [*] --> ChưaNop
+
+    ChưaNop --> DaNop : Sinh viên tải file lên
+    DaNop --> DuocCham : Giảng viên chấm điểm
+    DuocCham --> HoanThanh : Điểm được lưu và công bố
+
+    ChưaNop --> HetHan : Hết thời gian nộp
+    HetHan --> [*]
+    HoanThanh --> [*]
 
 ```
