@@ -1,4 +1,4 @@
-# Lession 1: Sequence Diagram — Biểu đồ tuần tự
+# Lesson 1: Sequence Diagram — Biểu đồ tuần tự
 
 ## I. Khái niệm
 
