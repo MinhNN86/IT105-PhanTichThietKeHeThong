@@ -1,0 +1,1 @@
+![Ảnh giao diện gốc](Ex05.png)
