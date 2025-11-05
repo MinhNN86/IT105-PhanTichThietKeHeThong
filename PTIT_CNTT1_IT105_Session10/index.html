@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký khóa học</title>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background: #f6f8fa;
+            padding: 40px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: 600;
+            margin-top: 12px;
+            display: block;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            background: #2a72d8;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #1e5cb8;
+        }
+        .note {
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Đăng ký khóa học</h1>
+    <form>
+        <label for="fullname">Họ và tên</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên..." required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="course">Chọn khóa học</label>
+        <select id="course" name="course" required>
+            <option value="">-- Chọn khóa học --</option>
+            <option value="frontend">Frontend với ReactJS</option>
+            <option value="backend">Backend với Java Spring Boot</option>
+            <option value="python">Phân tích dữ liệu bằng Python</option>
+            <option value="devops">DevOps căn bản</option>
+        </select>
+
+        <label for="payment">Phương thức thanh toán</label>
+        <select id="payment" name="payment" required>
+            <option value="">-- Chọn phương thức --</option>
+            <option value="vnpay">VNPay</option>
+            <option value="momo">Momo</option>
+            <option value="bank">Chuyển khoản ngân hàng</option>
+        </select>
+
+        <button type="submit">Đăng ký ngay</button>
+    </form>
+    <div class="note">
+        Sau khi đăng ký, bạn sẽ nhận email xác nhận và thông tin thanh toán.
+    </div>
+</div>
+</body>
+</html>

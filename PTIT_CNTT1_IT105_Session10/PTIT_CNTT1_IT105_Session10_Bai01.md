@@ -1,0 +1,10 @@
+| **Yêu cầu ban đầu (mơ hồ)** | **Yêu cầu viết lại (rõ ràng)** | **Giải thích lý do** |
+|------------------------------|----------------------------------|----------------------|
+| Hệ thống cần thân thiện với người dùng. | Giao diện hệ thống phải có hướng dẫn thao tác rõ ràng và người dùng mới có thể hoàn thành quy trình đăng ký tài khoản trong **≤ 2 phút**. | “Thân thiện” là khái niệm trừu tượng. Phiên bản viết lại đo lường được và có thể kiểm thử qua thử nghiệm người dùng. |
+| Trang web phải chạy nhanh. | Thời gian tải trang chủ **≤ 3 giây** với **1000 người dùng truy cập đồng thời**. | Có tiêu chí cụ thể về hiệu năng, có thể kiểm tra bằng công cụ benchmark. |
+| Tìm kiếm cần phải tiện lợi. | Hệ thống hiển thị kết quả tìm kiếm trong **≤ 1 giây** và cho phép **lọc theo danh mục, giá, và trạng thái sản phẩm**. | Định nghĩa rõ “tiện lợi” bằng chức năng lọc và tốc độ phản hồi. |
+| Ứng dụng phải bảo mật tốt. | Tài khoản người dùng phải được mã hóa bằng thuật toán **SHA-256**, có xác thực **2 bước (2FA)** khi đăng nhập. | “Bảo mật tốt” được cụ thể hóa thành tiêu chuẩn kỹ thuật có thể kiểm chứng. |
+| Giao diện nên đẹp và dễ nhìn. | Tất cả trang web phải tuân thủ **chuẩn thiết kế UI/UX Material Design**, màu sắc có độ tương phản tối thiểu **4.5:1**. | “Đẹp” được lượng hóa theo tiêu chuẩn thiết kế UI/UX, có thể kiểm tra bằng công cụ đánh giá. |
+| Hệ thống cần có tính linh hoạt cao. | Hệ thống cho phép **thêm module mới** mà không cần chỉnh sửa mã nguồn hiện tại, thời gian tích hợp module mới không vượt quá **2 giờ**. | “Linh hoạt” được mô tả cụ thể bằng khả năng mở rộng hệ thống và thời gian tích hợp. |
+| Người dùng cảm thấy hài lòng khi sử dụng. | Sau 1 tuần thử nghiệm beta, **≥ 80% người dùng** đánh giá trải nghiệm từ **4/5 điểm trở lên** trong khảo sát phản hồi. | Biến “hài lòng” thành chỉ số đo lường được qua khảo sát định lượng. |
+| Ứng dụng cần hoạt động ổn định. | Ứng dụng phải có **thời gian uptime ≥ 99.5%/tháng** và **không crash quá 1 lần/1000 phiên sử dụng**. | Xác định tiêu chí định lượng cho “ổn định”, có thể kiểm chứng bằng log và thống kê hệ thống. |
